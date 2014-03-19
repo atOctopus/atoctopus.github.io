@@ -219,19 +219,131 @@
 
 <p>在线预览：<a href="http://codepen.io/anon/pen/LiJln/">点击这里</a></p>
 
+<br />
+
+
 <h3>2.依旧是使用HTML完成以下图片</h3>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/html02.png" alt="HTML第二题" /></p>
 
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">colspan</span><span class="o">=</span><span class="s">&quot;4&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">rowspan</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">colspan</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 <p>在线预览：<a href="http://codepen.io/anon/pen/kIEAx/">点击这里</a></p>
+
+<br />
+
 
 <hr />
 
 <h2>CSS部分</h2>
 
-<h3>1.三个div并排，左右div为固宽200px，自间自适应。</h3>
+<h3>1.三个div并排，左右div为固宽200px，中间自适应。</h3>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" /></p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;box&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;left&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;center&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c">#box {</span>
+</span><span class='line'>  <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c">#000;</span>
+</span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">left</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nb">float</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">width</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">background</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">right</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nb">float</span><span class="p">:</span> <span class="n">right</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">width</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">background</span><span class="p">:</span> <span class="n">yellow</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">center</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">background</span><span class="p">:</span> <span class="n">blue</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">点击这里</a></p>
 
@@ -240,17 +352,24 @@
 
 <h3>2.CSS的选择器优先级</h3>
 
-<p><p>!important &gt; 内联 &gt;  id &gt; class &gt; tag &gt; *</p>
+<p><code>!important &gt; 内联 &gt; id &gt; class &gt; tag &gt; *</code></p>
 
-<p><br /></p>
+<br />
 
-<h3>3.清除浮动的方法</h3>
 
-<p><p>一般需要使用到浮动清除有两种情况：父元素下子元素浮动和上级元素浮动</p></p>
+<h3>4.清除浮动的方法</h3>
 
-<p><p>清除父元素下子元素浮动</p></p>
+<p>一般需要使用到浮动清除有两种情况：父元素下子元素浮动和上级元素浮动</p>
 
-<p><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+
+
+
+<p>清除父元素下子元素浮动</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -258,15 +377,36 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">before</span> <span class="p">{</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">//</span> <span class="n">clearfix</span><span class="err">方法</span>
+</span><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">before</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">visibility</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">block</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">content</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">font</span><span class="o">&ndash;</span><span class="n">size</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure></p>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="n">overflow</span><span class="err">方法</span>
+</span><span class='line'><span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<p>清除上级元素浮动</p>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="nb">float</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span> <span class="err">或者</span> <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
+</span></code></pre></td></tr></table></div></figure>
+
 
 <hr />
 </div>
