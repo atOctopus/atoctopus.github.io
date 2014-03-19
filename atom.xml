@@ -4,10 +4,10 @@
   <title><![CDATA[Jason Lin]]></title>
   <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-03-19T04:17:44-07:00</updated>
+  <updated>2014-03-19T06:23:40-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Jason Lin]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -21,21 +21,177 @@
     <content type="html"><![CDATA[<p>最近面试了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。题目还算简单，面试结束后重新思考发现错误挺多的，记录于此引以为戒。</p>
 
 
+<hr />
+
 <h2>HTML部分</h2>
 
-<p>1.使用HTML完成以下表格</p>
-
+<h3>1.使用HTML完成以下表格</h3>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/html01.png" alt="HTML第一题" /></p>
 
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">form</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">table</span> <span class="n">border</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">姓名</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">性别</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;male&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;男&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;male&quot;</span><span class="o">&gt;</span><span class="err">男</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;女&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;female&quot;</span><span class="o">&gt;</span><span class="err">女</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">类型</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkbox1&quot;</span><span class="o">&gt;</span><span class="err">类型一</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkbox2&quot;</span><span class="o">&gt;</span><span class="err">类型二</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkbox3&quot;</span><span class="o">&gt;</span><span class="err">类型三</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">select</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;ue&quot;</span><span class="o">&gt;</span><span class="n">UE</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">selected</span><span class="o">=</span><span class="s">&quot;selected&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;ui&quot;</span><span class="o">&gt;</span><span class="n">UI</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;ud&quot;</span><span class="o">&gt;</span><span class="n">UD</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">上传文件</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">内容</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">textarea</span> <span class="n">rows</span><span class="o">=</span><span class="s">&quot;5&quot;</span> <span class="n">cols</span><span class="o">=</span><span class="s">&quot;20&quot;</span><span class="o">&gt;&lt;/</span><span class="n">textarea</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;确定&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;reset&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;清除&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">form</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 <p>在线预览：<a href="http://codepen.io/anon/pen/LiJln/">点击这里</a></p>
 
-<p>2.依旧是使用HTML完成以下图片</p>
-
+<h3>2.依旧是使用HTML完成以下图片</h3>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/html02.png" alt="HTML第二题" /></p>
 
 <p>在线预览：<a href="http://codepen.io/anon/pen/kIEAx/">点击这里</a></p>
+
+<hr />
+
+<h2>CSS部分</h2>
+
+<h3>1.三个div并排，左右div为固宽200px，自间自适应。</h3>
+
+<p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" /></p>
+
+<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">点击这里</a></p>
+
+<br />
+
+
+<h3>2.CSS的选择器优先级</h3>
+
+<p><p>!important &gt; 内联 &gt;  id &gt; class &gt; tag &gt; *</p>
+
+<p><br /></p>
+
+<h3>3.清除浮动的方法</h3>
+
+<p><p>一般需要使用到浮动清除有两种情况：父元素下子元素浮动和上级元素浮动</p></p>
+
+<p><p>清除父元素下子元素浮动</p></p>
+
+<p><figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">before</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">visibility</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">content</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">font</span><span class="o">&ndash;</span><span class="n">size</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></p>
+
+<hr />
 ]]></content>
   </entry>
   
