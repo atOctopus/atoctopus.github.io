@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://atOctopus.github.io/atom.xml" rel="self"/>
-  <link href="http://atOctopus.github.io/"/>
-  <updated>2014-03-19T01:04:34-07:00</updated>
-  <id>http://atOctopus.github.io/</id>
+  <title><![CDATA[前端一锅粥]]></title>
+  <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
+  <link href="http://www.atoctopus.com/"/>
+  <updated>2014-03-19T02:35:05-07:00</updated>
+  <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
     
@@ -15,18 +15,35 @@
   
   <entry>
     <title type="html"><![CDATA[一名应届生的面试经历]]></title>
-    <link href="http://atOctopus.github.io/blog/2014/03/19/interview/"/>
+    <link href="http://www.atoctopus.com/blog/2014/03/19/interview/"/>
     <updated>2014-03-19T00:57:38-07:00</updated>
-    <id>http://atOctopus.github.io/blog/2014/03/19/interview</id>
-    <content type="html"><![CDATA[
+    <id>http://www.atoctopus.com/blog/2014/03/19/interview</id>
+    <content type="html"><![CDATA[<p>最近面试了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。题目还算简单，面试结束后重新思考发现错误挺多的，记录于此引以为戒。</p>
+
+
+<h2>HTML部分</h2>
+
+<p>1.使用HTML完成以下表格</p>
+
+
+<p><img src="http://www.atoctopus.com/images/post/interview/html01.png" alt="HTML第一题" /></p>
+
+<p>在线预览：<a href="http://codepen.io/anon/pen/LiJln/">点击这里</a></p>
+
+<p>2.依旧是使用HTML完成以下图片</p>
+
+
+<p><img src="http://www.atoctopus.com/images/post/interview/html02.png" alt="HTML第二题" /></p>
+
+<p>在线预览：<a href="http://codepen.io/anon/pen/kIEAx/">点击这里</a></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[【学习笔记】高性能网站建设指南]]></title>
-    <link href="http://atOctopus.github.io/blog/2014/03/19/wangzhanyouhua/"/>
+    <link href="http://www.atoctopus.com/blog/2014/03/19/wangzhanyouhua/"/>
     <updated>2014-03-19T00:21:33-07:00</updated>
-    <id>http://atOctopus.github.io/blog/2014/03/19/wangzhanyouhua</id>
+    <id>http://www.atoctopus.com/blog/2014/03/19/wangzhanyouhua</id>
     <content type="html"><![CDATA[<h1>h1</h1>
 
 <h2>h2</h2>
