@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[前端一锅粥]]></title>
+  <title><![CDATA[Jason Lin]]></title>
   <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-03-19T02:35:05-07:00</updated>
+  <updated>2014-03-19T04:17:44-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[一名应届生的面试经历]]></title>
+    <title type="html"><![CDATA[一名应届生的面试题]]></title>
     <link href="http://www.atoctopus.com/blog/2014/03/19/interview/"/>
     <updated>2014-03-19T00:57:38-07:00</updated>
     <id>http://www.atoctopus.com/blog/2014/03/19/interview</id>
@@ -44,11 +44,132 @@
     <link href="http://www.atoctopus.com/blog/2014/03/19/wangzhanyouhua/"/>
     <updated>2014-03-19T00:21:33-07:00</updated>
     <id>http://www.atoctopus.com/blog/2014/03/19/wangzhanyouhua</id>
-    <content type="html"><![CDATA[<h1>h1</h1>
+    <content type="html"><![CDATA[<h2>规则一：减少HTTP请求</h2>
 
-<h2>h2</h2>
+<ol>
+<li>使用图片地图</li>
+<li>CSS Sprites</li>
+<li>内联图片</li>
+<li>合并脚本和样式文件</li>
+</ol>
 
-<h2>h3</h2>
+
+<br />
+
+
+<h2>规则二：使用内容发布网络</h2>
+
+<p>CDN（Content Delivery NetWorks）是一组发布在不同地理位置的Web服务器，用于更有效的向用户发送内容，用户离服务器越近则响应速度越块。</p>
+
+
+<br />
+
+
+<h2>规则三：添加长久的Expires头</h2>
+
+<br />
+
+
+<h2>规则四：压缩组件</h2>
+
+<ol>
+<li>通过gzip编码压缩响应包</li>
+<li>删除换行、回车、注释、Tab、空格</li>
+</ol>
+
+
+<br />
+
+
+<h2>规则五：将样式表放在顶部（使用&lt;link&gt;标签放在&lt;head&gt;标签中）</h2>
+
+<ol>
+<li>样式表位于底部时禁止了页面逐步呈现，在页面组件加载完成前，浏览器呈&#8221;白屏&#8221;，极大影响用户体验。（只发生在Internet Explorer）导致白屏情况有以下4种：
+
+<ul>
+<li>在新窗口打开时</li>
+<li>重新家在时</li>
+<li>作为首页</li>
+<li>使用了@import规则导入的样式表</li>
+</ul>
+</li>
+<li>样式表位于底部还会造成无样式内容闪烁（FOUC），页面首页会加载文字和图片，然后加载样式表，导致样式重新渲染。</li>
+</ol>
+
+
+<br />
+
+
+<h2>规则六：将脚本放在底部</h2>
+
+<p>根据HTTP1.1的规范建议浏览器从每个主机名并行下载两个组件。</p>
+
+
+<p>将脚本放置在顶部，影响页面内容的呈现，阻塞其他组件的下载（因为脚本可能使用了document.write修改内容，因此浏览器会等待脚本下载，确保页面恰当布局）。</p>
+
+
+<br />
+
+
+<h2>规则七：避免使用CSS表达式</h2>
+
+<br />
+
+
+<h2>规则八：使用外部的CSS和JavaScript</h2>
+
+<ol>
+<li>内联的JavaScript和CSS在每次访问都要重新下载，因为只需向服务器请求html文档，不需要请求js、css文件减少了请求数量，所以首次载入速度比外部更快，但无法缓存。</li>
+<li>外部的JavaScript和CSS可被缓存，当多个页面使用相同的js和css且用户访问间隔短时，外部Javascript和CSS更具优势。</li>
+</ol>
+
+
+<br />
+
+
+<h2>规则九：减少DNS查找</h2>
+
+<ol>
+<li>将组件放在至少2个主机名下，不超过4个主机名，在减少DNS查找和并行下载取得平衡。</li>
+</ol>
+
+
+<br />
+
+
+<h2>规则十：精简JavaScript和CSS</h2>
+
+<ol>
+<li><a href="http://yui.github.io/yuicompressor/">YUI Comparessor压缩工具</a></li>
+<li>简写CSS #606代替#660066; #888代替#888888; 0代替0px; 合并相同的类，移除不使用的类。</li>
+</ol>
+
+
+<br />
+
+
+<h2>规则十一：避免重定向</h2>
+
+<ol>
+<li>配置Apache-Alias指令</li>
+<li>如果是Apache2.0处理器，则配置DirectorySlash指令</li>
+</ol>
+
+
+<br />
+
+
+<h2>规则十二：移除重复脚本</h2>
+
+<br />
+
+
+<h2>规则十三：配置或移除ETag</h2>
+
+<br />
+
+
+<h2>规则十四：缓存主动请求的Ajax</h2>
 ]]></content>
   </entry>
   
