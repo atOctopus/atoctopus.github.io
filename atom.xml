@@ -4,7 +4,7 @@
   <title><![CDATA[Jason Lin]]></title>
   <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-03-19T09:44:38-07:00</updated>
+  <updated>2014-03-19T22:13:48-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Jason Lin]]></name>
@@ -18,7 +18,7 @@
     <link href="http://www.atoctopus.com/blog/2014/03/19/interview/"/>
     <updated>2014-03-19T00:57:38-07:00</updated>
     <id>http://www.atoctopus.com/blog/2014/03/19/interview</id>
-    <content type="html"><![CDATA[<p>最近面试了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。题目还算简单，面试结束后重新思考发现错误挺多的，记录于此引以为戒。</p>
+    <content type="html"><![CDATA[<p>最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。题目还算简单，面试结束后重新思考发现错误挺多的，记录于此引以为戒。</p>
 
 
 <hr />
@@ -280,9 +280,42 @@
 <br />
 
 
+<h3>3.div高初始200px，当内容超过200px时撑开容器</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">.</span><span class="n">div</span><span class="o">-</span><span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nb">min</span><span class="o">-</span><span class="n">height</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span> <span class="o">/*</span> <span class="err">主流浏览器</span> <span class="o">*/</span>
+</span><span class='line'>    <span class="n">height</span><span class="p">:</span> <span class="n">auto</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span> <span class="o">/*</span> <span class="n">Firefox</span><span class="err">浏览器</span> <span class="o">*/</span>
+</span><span class='line'>    <span class="n">height</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span> <span class="o">/*</span> <span class="n">IE</span><span class="err">浏览器</span> <span class="o">*/</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<br />
+
+
+<h3>4.让div层在flash和select之上</h3>
+
+<p>因为flash和select是以窗口形式显示，窗口形式要优于非窗口形式</p>
+
+
+<p><code>
+/* Flash */
+将Flash的wmode属性默认值window改为"opaque"或"transparent"
+</code></p>
+
+<br />
+
+
 <h3>4.清除浮动的方法</h3>
 
-<p>一般需要使用到浮动清除有两种情况：父元素下子元素浮动和上级元素浮动</p>
+<p>一般需要使用到浮动清除有两种情况：子元素浮动和上级元素浮动</p>
 
 
 
@@ -304,18 +337,96 @@
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
 <span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">//</span> <span class="n">clearfix</span><span class="err">方法</span>
-</span><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">before</span> <span class="p">{</span>
-</span><span class='line'>  <span class="n">visibility</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">block</span><span class="p">;</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">/*</span> <span class="n">clearfix</span><span class="err">方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">精简版</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">before</span><span class="p">,</span> <span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">content</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">table</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">clear</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">clearfix</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">//</span> <span class="n">overflow</span><span class="err">方法</span>
-</span><span class='line'><span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">经典版</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">visibility</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">content</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">//</span> <span class="n">IE6</span>
+</span><span class='line'><span class="o">*</span> <span class="n">html</span> <span class="o">.</span><span class="n">clearfix</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">//</span> <span class="n">IE7</span>
+</span><span class='line'><span class="o">*</span> <span class="n">first</span><span class="o">-</span><span class="n">child</span><span class="o">+</span><span class="n">html</span> <span class="o">.</span><span class="n">clearfix</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="n">overflow</span><span class="err">方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">方法一</span> <span class="o">*/</span>
+</span><span class='line'><span class="c">#demo2 {</span>
+</span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
+</span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="err">方法二</span> <span class="o">*/</span>
+</span><span class='line'><span class="c">#demo2 {</span>
+</span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="err">方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="c">#demo3 {</span>
+</span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="p">;</span>
+</span><span class='line'>  <span class="o">*</span><span class="n">display</span><span class="p">:</span> <span class="n">inline</span><span class="p">;</span>
+</span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
