@@ -245,7 +245,7 @@ categories:
 <p>清除上级元素浮动</p>
 
 ```python
-float: left; 或者 clear: both;123
+float: left; 或者 clear: both;
 ```
 
 ### 6.px、em和百分比之间的区别
