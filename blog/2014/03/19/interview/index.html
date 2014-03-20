@@ -7,7 +7,7 @@
 	<meta name="author" content="Jason Lin">
 
 	
-	<meta name="description" content="一名应届生的面试题 最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。题目还算简单，面试结束后重新思考发现错误挺多的，记录于此引以为戒。 HTML部分 1.使用HTML完成以下表格 1
+	<meta name="description" content="一名应届生的面试题 最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。面试结束后重新思考发现错误挺多的，需要学习的地方还有很多，记录于此引以为戒。 HTML部分 1.使用HTML完成以下表格 1
 2
 3
 4
@@ -20,8 +20,7 @@
 11
 12
 13
-14
-15 &hellip;">
+14 &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -58,7 +57,6 @@
 <p class="subtitle">A blogging framework for hackers.</p>
 <nav id="main-nav"><ul class="main-navigation">
   <li><a href="/">Blog</a></li>
-  <li><a href="/">About</a></li>
   <li><a href="/blog/archives">Archives</a></li>
 </ul>
 </nav>
@@ -96,7 +94,7 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<h1 class="title" itemprop="name">一名应届生的面试题</h1>
-	<div class="entry-content" itemprop="articleBody"><p>最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。题目还算简单，面试结束后重新思考发现错误挺多的，记录于此引以为戒。</p>
+	<div class="entry-content" itemprop="articleBody"><p>最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。面试结束后重新思考发现错误挺多的，需要学习的地方还有很多，记录于此引以为戒。</p>
 
 
 <hr />
@@ -353,7 +351,7 @@
 
 <h3>2.CSS的选择器优先级</h3>
 
-<p><code>!important &gt; 内联 &gt; id &gt; class &gt; tag &gt; *</code></p>
+<p><code>!important &gt; 内联 &gt; id &gt; class() &gt; tag &gt; *</code></p>
 
 <br />
 
@@ -391,14 +389,14 @@
 <br />
 
 
-<h3>4.清除浮动的方法</h3>
+<h3>5.清除浮动的方法</h3>
 
 <p>一般需要使用到浮动清除有两种情况：子元素浮动和上级元素浮动</p>
 
 
 
 
-<p>清除父元素下子元素浮动</p>
+<p>清除子元素浮动</p>
 
 
 
@@ -472,7 +470,6 @@
 </span><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">visibility</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">block</span><span class="p">;</span>
-</span><span class='line'>  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">content</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">height</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
@@ -482,29 +479,30 @@
 </span><span class='line'>  <span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'><span class="o">//</span> <span class="n">IE7</span>
-</span><span class='line'><span class="o">*</span> <span class="n">first</span><span class="o">-</span><span class="n">child</span><span class="o">+</span><span class="n">html</span> <span class="o">.</span><span class="n">clearfix</span> <span class="p">{</span>
+</span><span class='line'><span class="o">*</span><span class="p">:</span><span class="n">first</span><span class="o">-</span><span class="n">child</span><span class="o">+</span><span class="n">html</span> <span class="o">.</span><span class="n">clearfix</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">/*</span> <span class="n">overflow</span><span class="err">方法</span> <span class="o">*/</span>
 </span><span class='line'><span class="o">/*</span> <span class="err">方法一</span> <span class="o">*/</span>
-</span><span class='line'><span class="c">#demo2 {</span>
+</span><span class='line'><span class="c">#box {</span>
 </span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
 </span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">/*</span> <span class="err">方法二</span> <span class="o">*/</span>
-</span><span class='line'><span class="c">#demo2 {</span>
+</span><span class='line'><span class="c">#box {</span>
 </span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
 </span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">/*</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="err">方法</span> <span class="o">*/</span>
-</span><span class='line'><span class="c">#demo3 {</span>
-</span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="p">;</span>
-</span><span class='line'>  <span class="o">*</span><span class="n">display</span><span class="p">:</span> <span class="n">inline</span><span class="p">;</span>
-</span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">空标签方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">.</span><span class="n">clear</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;clear&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>  <span class="o">//</span> <span class="err">插入到浮动元素之后，不推荐！添加了不必要的代码</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="err">另外还有为容器添加浮动，但这带来的影响是下个元素会受这个元素影响，导致页面需要大量的浮动</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -516,11 +514,144 @@
 
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="nb">float</span><span class="p">:</span> <span class="n">left</span><span class="p">;</span> <span class="err">或者</span> <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="err">使用</span><span class="nb">float</span> <span class="err">或者</span> <span class="n">clear</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
+
+
+<br />
+
+
+<h3>6.px、em和百分比之间的区别</h3>
+
+<br />
+
+
 <hr />
+
+<h2>JavaScript jQuery部分</h2>
+
+<h3>1.写一个原型方法，要求将数组中重复的项去掉</h3>
+
+<br />
+
+
+<h3>2.jQuery的经典写法有什么好处</h3>
+
+<br />
+
+
+<h3>3.如何解决多人开发函数命名重复的问题</h3>
+
+<br />
+
+
+<h3>4.使用CSS、JavaScript让元素绝对居中</h3>
+
+<br />
+
+
+<h3>5.使用Ajax上传一个文件</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">/*</span> <span class="n">JS</span><span class="err">方式</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">function</span> <span class="n">Ajax</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">var</span> <span class="n">XHR</span> <span class="o">=</span> <span class="n">null</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">if</span><span class="p">(</span><span class="n">window</span><span class="o">.</span><span class="n">ActiveXObject</span><span class="p">)</span> <span class="p">{</span> <span class="o">/*</span> <span class="n">IE5</span> <span class="mi">6</span><span class="err">是以</span><span class="n">ActiveObject</span><span class="err">的方式引入</span><span class="n">XMLHttpRequest</span><span class="err">对象的</span> <span class="o">*/</span>
+</span><span class='line'>    <span class="n">XHR</span> <span class="o">=</span> <span class="n">new</span> <span class="n">ActiveXObject</span><span class="p">(</span><span class="s">&quot;Microsoft.XMLHTTP&quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">window</span><span class="o">.</span><span class="n">XMLHttpRequest</span><span class="p">)</span> <span class="p">{</span> <span class="o">//</span> <span class="err">除</span><span class="n">IE5</span> <span class="mi">6</span><span class="err">以外的浏览器</span>
+</span><span class='line'>    <span class="n">XHR</span> <span class="o">=</span> <span class="n">new</span> <span class="n">XMLHttpRequest</span><span class="p">();</span> <span class="o">/*</span> <span class="n">XMLHttpRequest</span><span class="err">是</span><span class="n">window</span><span class="err">的子对象，实例化一个</span><span class="n">XMLHttpRequest</span><span class="err">对象</span> <span class="o">*/</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">XML</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;POST&quot;</span><span class="p">,</span> <span class="s">&quot;test.php&quot;</span><span class="p">,</span> <span class="n">true</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<br />
+
+
+<h3>6.写出深度clone</h3>
+
+<br />
+
+
+<hr />
+
+<h2>其他</h2>
+
+<h3>1.前端应该使用MVC实现吗？说说你的看法和实现的思想</h3>
+
+<br />
+
+
+<h3>2.你如何让结构样式分离，你的哪些优化方法，如何解决兼容性问题？</h3>
+
+<br />
+
+
+<h3>3.你对HTML5和CSS3的了解</h3>
+
+<br />
+
+
+<h3>4.列出你知道的CSS框架和JS框架，并说明其有缺点</h3>
+
+<p>CSS框架</p>
+
+
+<blockquote><ul>
+<li><code>jQuery UI</code></li>
+<li><code>BootStrap</code></li>
+</ul>
+</blockquote>
+
+<p>JS框架</p>
+
+
+<blockquote><ul>
+<li><code>Prototype</code></li>
+<li>优：对JS的内置对象（例如String对象、Array对象等）做了大量的扩展。</li>
+<li>缺：成型年代早，整体上面向对象的编程思想不到位。</li>
+<li><code>Dojo</code></li>
+<li>优：提供了其他JS库所没有的功能。例如离线存储API、生成图标的组件、基于SVG/VML的矢量图形库和Comet支持等。非常适合企业级应用的JS库。</li>
+<li>缺：学习曲线陡，文档不齐全，API不稳定。</li>
+<li><code>YUI</code></li>
+<li>优：YUI封装了一系列比较丰富的功能，例如DOM操作和Ajax应用等，同时还包括了几个核心的CSS文件，文档极其完备，代码编写非常规范。</li>
+<li><code>Ext JS</code></li>
+<li>优：YUI的一个扩展，主要用于前端界面，Ext可以用来开发富有华丽外观的富客户端应用。</li>
+<li>缺：Ext侧重于界面，本身比较臃肿，需要付费。</li>
+<li><code>MooTools</code></li>
+<li>优：轻量、简洁、模块化和面向对象。语法与prototype相差无几，提供了强大的功能、更好的扩展性和兼容性。模块化思想优秀，语法简洁直观，文档完善。</li>
+<li><code>jQuery</code></li>
+<li>轻量级</li>
+<li>强大的DOM选择器</li>
+<li>出色的DOM操作的封装</li>
+<li>可靠的事件处理机制</li>
+<li>完善的Ajax</li>
+<li>不污染顶级变量</li>
+<li>出色的浏览器兼容</li>
+<li>链式操作方式</li>
+<li>隐式迭代</li>
+<li>行为层与结构层分离</li>
+<li>丰富的插件支持</li>
+<li>完善的文档</li>
+<li>开源</li>
+</ul>
+</blockquote>
 </div>
 
 </article>
