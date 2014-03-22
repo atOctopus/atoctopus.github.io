@@ -4,7 +4,7 @@
   <title><![CDATA[Jason Lin]]></title>
   <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-03-20T09:45:35-07:00</updated>
+  <updated>2014-03-21T19:05:47-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Jason Lin]]></name>
@@ -83,55 +83,63 @@
 <span class='line-number'>52</span>
 <span class='line-number'>53</span>
 <span class='line-number'>54</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">form</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">&lt;</span><span class="n">table</span> <span class="n">border</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="o">&gt;</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">form</span> <span class="n">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="n">active</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">table</span> <span class="n">cellspacing</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="n">cellpadding</span><span class="o">=</span><span class="s">&quot;5&quot;</span> <span class="n">border</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="n">summary</span><span class="o">=</span><span class="s">&quot;一个员工意见提交表&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">caption</span><span class="o">&gt;</span><span class="err">意见提交表</span><span class="o">&lt;/</span><span class="n">caption</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">姓名</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="err">姓名</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">性别</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="err">性别</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;male&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;男&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;male&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;male&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span> <span class="n">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;male&quot;</span><span class="o">&gt;</span><span class="err">男</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;女&quot;</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;female&quot;</span><span class="o">&gt;</span><span class="err">女</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span><span class="o">&gt;</span><span class="err">女</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">类型</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="err">类型</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkbox1&quot;</span><span class="o">&gt;</span><span class="err">类型一</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkbox2&quot;</span><span class="o">&gt;</span><span class="err">类型二</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkbox3&quot;</span><span class="o">&gt;</span><span class="err">类型三</span>
-</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;checkbox1&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;checkbox1&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkboxAll&quot;</span> <span class="n">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;checkbox1&quot;</span><span class="o">&gt;</span><span class="err">类型一</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;checkbox2&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;checkbox2&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkboxAll&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;checkbox2&quot;</span><span class="o">&gt;</span><span class="err">类型二</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;checkbox3&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;checkbox3&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;checkboxAll&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;checkbox3&quot;</span><span class="o">&gt;</span><span class="err">类型三</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>        <span class="o">&lt;</span><span class="n">select</span><span class="o">&gt;</span>
-</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;ue&quot;</span><span class="o">&gt;</span><span class="n">UE</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
-</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">selected</span><span class="o">=</span><span class="s">&quot;selected&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;ui&quot;</span><span class="o">&gt;</span><span class="n">UI</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
-</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;ud&quot;</span><span class="o">&gt;</span><span class="n">UD</span><span class="err">部门</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;ue&quot;</span><span class="o">&gt;</span><span class="n">UE</span><span class="err">部</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;ui&quot;</span> <span class="n">selected</span><span class="o">=</span><span class="s">&quot;selected&quot;</span><span class="o">&gt;</span><span class="n">UI</span><span class="err">部</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>          <span class="o">&lt;</span><span class="n">option</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;ue&quot;</span><span class="o">&gt;</span><span class="n">UD</span><span class="err">部</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
 </span><span class='line'>        <span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">上传文件</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span><span class="o">&gt;&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="err">内容</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="err">上传文件</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="n">textarea</span> <span class="n">rows</span><span class="o">=</span><span class="s">&quot;5&quot;</span> <span class="n">cols</span><span class="o">=</span><span class="s">&quot;20&quot;</span><span class="o">&gt;&lt;/</span><span class="n">textarea</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;&amp;</span><span class="n">nbsp</span><span class="p">;</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">th</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="err">内容</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;确定&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">textarea</span> <span class="n">rows</span><span class="o">=</span><span class="s">&quot;5&quot;</span> <span class="n">cols</span><span class="o">=</span><span class="s">&quot;22&quot;</span><span class="o">&gt;&lt;/</span><span class="n">textarea</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span> <span class="n">colspan</span><span class="o">=</span><span class="s">&quot;2&quot;</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;submit&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;提交&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;reset&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;清除&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
@@ -140,7 +148,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>在线预览：<a href="http://codepen.io/anon/pen/LiJln/">点击这里</a></p>
+<p>在线预览：<a href="http://codepen.io/anon/pen/ClmyB/">点击这里</a></p>
 
 <br />
 
