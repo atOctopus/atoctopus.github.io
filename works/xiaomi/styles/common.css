@@ -1,0 +1,253 @@
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 1190px;
+}
+
+.icon-common {
+	background: url(../images/common/icon-common.png) no-repeat transparent;
+}
+
+.icon-saleoff {
+	background: url(../images/common/icon-saleoff.png) no-repeat transparent;
+}
+
+.menu-langList,
+.carts-num,
+.aside-nav-list,
+.slide,
+.goods-left,
+.goods-right,
+.recharge,
+.recharge-phone input,
+.recharge-atOnce input,
+.specialOffer,
+.specialOffer a,
+.xmServer,
+.callService a,
+.xs-border-common img,
+.userLoginBox,
+.login,
+.register {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.xs-border-common {
+	position: relative;
+	float: left;
+	margin-left: 10px;
+}
+
+.common-h2,
+.hottalk,
+.specialWare {
+	height: 50px;
+	border-bottom: 1px solid #ededed;
+	background: #fff;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-o-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.common-h2 .title {
+	margin-left: 20px;
+	width: 75px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	background: #fff;
+}
+
+.goods-list {
+	float: left;
+	padding: 0 0 10px 10px;
+	width: 940px;
+	_overflow: hidden;
+	background: #fff;
+}
+
+.goods-list li,
+.hotgoods-right li {
+	float: left;
+	*display: inline;
+	margin: 10px 10px 0 0;
+}
+
+.goods-list a,
+.specialOffer a,
+.hotgoods-right a,
+.wareLink,
+.specialWare a {
+	position: relative;
+	display: block;
+}
+
+.lg img,
+.lg a {
+	width: 460px;
+	height: 310px;
+}
+
+.md img,
+.md a {
+	width: 225px;
+	height: 310px;
+}
+
+.xs {
+	height: 310px;
+	*overflow: hidden;
+}
+
+.xs img,
+.xs a {
+	width: 225px;
+	height: 150px;
+}
+
+.xs a {
+	margin-bottom: 10px;
+}
+
+.lg a:hover:before,
+.md a:hover:before,
+.xs a:hover:before,
+.goods-right a:hover:before {
+	position: absolute;
+	top: 0;
+	left: 0; 
+	width: 220px;
+	height: 140px;
+	content: "";
+	border: 5px solid rgba(0, 0, 0, 0.05);
+}
+
+.lg a:hover:before {
+	width: 450px;
+	height: 300px;
+}
+
+.md a:hover:before {
+	width: 215px;
+	height: 300px;
+}
+
+.xs a:hover:before {
+	width: 215px;
+	height: 140px;
+}
+
+.md-box {
+	position: relative;
+	float: left;
+	padding: 30px 20px 20px;
+	width: 196px;
+	*width: 190px;
+	height: 280px;
+	font-size: 14px;
+	border-right: 1px solid #ededed;
+}
+
+.md-box-price {
+	padding-top: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #F84858;
+	text-align: left;
+}
+
+.md-box-originalPrice {
+	font-size: 12px;
+	text-align: left;
+	text-decoration: line-through;
+}
+
+.md-box-name {
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.md-box-flags {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 50px;
+	height: 40px;
+}
+
+.md-box-sale {
+	display: block;
+	width: 50px;
+	height: 40px;
+	background-position: -630px 0 ;
+}
+
+.md-box-three {
+	border-right: none;
+}
+
+.hot a:link,
+.hot a:visited, 
+.openBuy a:link,
+.openBuy a:visited {
+	color: #aab2bd;
+}
+
+.menu a:link,
+.menu a:visited, 
+.carts a:link,
+.carts a:visited,
+.specialOffer a:link,
+.specialOffer a:visited,
+.xmServer a:link,
+.xmServer a:visited,
+.hottalk-right a:link,
+.hottalk-right a:visited,
+.md-box-name a:link,
+.md-box-name a:visited,
+.nums a:link,
+.nums a:visited,
+.service a:link,
+.service a:visited,
+.footer-down ul li a:link,
+.footer-down ul li a:visited,
+.footer-down .copyright a:link,
+.footer-down .copyright a:visited {
+	color: #434a54;
+}
+
+.allWare a:link,
+.allWare a:visited,
+#nav ul li a:link,
+#nav ul li a:visited,
+.callService a:link, 
+.callService a:visited {
+	color: #fff;
+}
+
+.hot a:hover,
+.openBuy a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.menu a:hover,
+.aside-nav-list dl dd a:hover,
+.carts a:hover,
+.specialOffer a:link label,
+.specialOffer a:visited label,
+.xmServer a:hover,
+.hottalk-right a:hover,
+.md-box-name a:hover,
+.nums a:hover,
+.service a:hover,
+.footer-down ul li a:hover,
+.copyright a:hover,
+.otherLogin .forgetPwd:hover {
+	color: #f84858;
+}

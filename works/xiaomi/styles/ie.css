@@ -1,0 +1,78 @@
+/* S header */
+
+#header,
+#top,
+.top-bar {
+	_z-index: 1;
+}
+
+.menu {
+	_display: inline;
+}
+
+.menu ul li {
+	*display: inline;
+	*zoom: 1;
+}
+
+.carts {
+	_width: 100px;
+}
+
+.carts a i {
+	*margin: 12px 8px 10px 0;
+}
+
+.carts-list {
+	_top: 73px;
+}
+
+.search-border {
+	*height: 34px;
+}
+
+.search-input {
+	_width: 322px;
+	*height: 30px;
+}
+
+.search-btn {
+	_right: 8px;
+	_width: 34px;
+	_height: 33px;
+	_filter: alpha(opacity=0);
+}
+
+.search-btnDefault {
+	_top: 9px;
+	_right: 13px;
+	_background-position: -223px -50px;
+}
+
+.search-btnHover {
+	_top: 3px;
+	_right: 5px;
+	_height: 36px;
+}
+
+#nav .allWare {
+	_text-indent: -7em;
+}
+
+#nav .xmPhone-list {
+	_top: 47px;
+}
+
+.aside-nav {
+	_top: 157px;
+}
+
+.aside-nav-list dd a {
+	_padding: 20px 0 10px 0;
+}
+
+.aside-nav-list-all span {
+	_margin: 0 27px 2px -12px;
+	_background-position: -184px -27px;
+}
+/* E header */

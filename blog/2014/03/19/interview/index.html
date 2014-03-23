@@ -57,7 +57,9 @@
 <p class="subtitle">A blogging framework for hackers.</p>
 <nav id="main-nav"><ul class="main-navigation">
   <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/works">Works</a></li>
+  <li><a href="/blog/archives">Archives</a></li> 
 </ul>
 </nav>
 <nav id="sub-nav">
@@ -177,8 +179,8 @@
 </span><span class='line'>      <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;male&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;male&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span> <span class="n">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;male&quot;</span><span class="o">&gt;</span><span class="err">男</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span><span class="o">&gt;</span>
-</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;femalei&quot;</span><span class="o">&gt;</span><span class="err">女</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="nb">input</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;female&quot;</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="n">value</span><span class="o">=</span><span class="s">&quot;female&quot;</span> <span class="n">name</span><span class="o">=</span><span class="s">&quot;sex&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>        <span class="o">&lt;</span><span class="n">label</span> <span class="k">for</span><span class="o">=</span><span class="s">&quot;female&quot;</span><span class="o">&gt;</span><span class="err">女</span><span class="o">&lt;/</span><span class="n">label</span><span class="o">&gt;</span>
 </span><span class='line'>      <span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
@@ -258,18 +260,12 @@
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
 <span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">table</span> <span class="n">cellspacing</span><span class="o">=</span><span class="s">&quot;0&quot;</span> <span class="n">cellpadding</span><span class="o">=</span><span class="s">&quot;10&quot;</span> <span class="n">border</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">colspan</span><span class="o">=</span><span class="s">&quot;4&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">colspan</span><span class="o">=</span><span class="s">&quot;4&quot;</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;col&quot;</span><span class="o">&gt;</span><span class="err">联系方式</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">rowspan</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">rowspan</span><span class="o">=</span><span class="s">&quot;2&quot;</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
@@ -278,11 +274,15 @@
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">colspan</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">td</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">th</span> <span class="n">colspan</span><span class="o">=</span><span class="s">&quot;3&quot;</span> <span class="n">scope</span><span class="o">=</span><span class="s">&quot;row&quot;</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">td</span><span class="o">&gt;</span><span class="n">test</span><span class="o">&lt;/</span><span class="n">ted</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
 </span><span class='line'><span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -359,7 +359,7 @@
 
 <h3>2.CSS的选择器优先级</h3>
 
-<p><code>!important &gt; 内联 &gt; id &gt; class() &gt; tag &gt; *</code></p>
+<p><code>!important &gt; 内联 &gt; id &gt; class &gt; tag &gt; *</code></p>
 
 <br />
 
@@ -460,13 +460,14 @@
 <span class='line-number'>49</span>
 <span class='line-number'>50</span>
 <span class='line-number'>51</span>
+<span class='line-number'>52</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">/*</span> <span class="n">clearfix</span><span class="err">方法</span> <span class="o">*/</span>
 </span><span class='line'><span class="o">/*</span> <span class="err">精简版</span> <span class="o">*/</span>
 </span><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">before</span><span class="p">,</span> <span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">content</span><span class="p">:</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">display</span><span class="p">:</span> <span class="n">table</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="o">.</span><span class="n">clear</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
+</span><span class='line'><span class="o">.</span><span class="n">clearfix</span><span class="p">:</span><span class="n">after</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
@@ -505,12 +506,13 @@
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">/*</span> <span class="err">空标签方法</span> <span class="o">*/</span>
-</span><span class='line'><span class="o">.</span><span class="n">clear</span> <span class="p">{</span>
+</span><span class='line'><span class="o">.</span><span class="n">clearfix</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;clear&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>  <span class="o">//</span> <span class="err">插入到浮动元素之后，不推荐！添加了不必要的代码</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;clearfix&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>  <span class="o">//</span> <span class="err">插入到浮动元素之后，不推荐！添加了不必要的代码</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">//</span> <span class="err">另外还有为容器添加浮动，但这带来的影响是下个元素会受这个元素影响，导致页面需要大量的浮动</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">为父元素增加</span><span class="nb">float</span><span class="err">方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">//</span> <span class="err">但这带来的影响是下个元素会受这个元素影响，导致页面需要大量的浮动</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -519,19 +521,21 @@
 <p>清除上级元素浮动</p>
 
 
-
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="err">使用</span><span class="nb">float</span> <span class="err">或者</span> <span class="n">clear</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
+<p><code>
+使用float 或者 clear
+</code></p>
 
 <br />
 
 
 <h3>6.px、em和百分比之间的区别</h3>
+
+<ul>
+<li>px是绝对度量单位，相对于显示器分辨率</li>
+<li>em是相对度量单位，相对于文本字号。例如浏览器默认字体16px，那么1em等于16px，14px等于0.875em</li>
+<li>百分比也是相对度量单位是相对于主体</li>
+</ul>
+
 
 <br />
 
@@ -540,7 +544,7 @@
 
 <h2>JavaScript jQuery部分</h2>
 
-<h3>1.写一个原型方法，要求将数组中重复的项去掉</h3>
+<h3>1.写一个原型unique方法，要求将数组中重复的项去掉</h3>
 
 <br />
 
@@ -550,12 +554,61 @@
 <br />
 
 
-<h3>3.如何解决多人开发函数命名重复的问题</h3>
+<h3>3.如何解决多人开发函数命名重命的问题</h3>
+
+<blockquote><ul>
+<li>开发前规范命名规则，根据不同的开发人员使用特殊的前缀，如：阿林<code>funciton ALifunction() {}</code></li>
+<li>将每个开发人员的函数封装到类中，调用的时候就调用类的函数，即使函数重名只要类名不重复</li>
+</ul>
+</blockquote>
 
 <br />
 
 
-<h3>4.使用CSS、JavaScript让元素绝对居中</h3>
+<h3>4.CSS、JS混合题，让元素绝对居中</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">/*</span> <span class="n">HTML</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;box&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="n">CSS</span> <span class="o">*/</span>
+</span><span class='line'><span class="c">#box {</span>
+</span><span class='line'>  <span class="n">position</span><span class="p">:</span> <span class="n">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">width</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">height</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c">#07d;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="n">JS</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">window</span><span class="o">.</span><span class="n">onload</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">var</span> <span class="n">oBox</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s">&quot;box&quot;</span><span class="p">);</span> <span class="o">//</span> <span class="err">获得元素</span>
+</span><span class='line'>  <span class="n">var</span> <span class="n">oWidth</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">scrollWidth</span> <span class="o">||</span> <span class="n">document</span><span class="o">.</span><span class="n">documentElement</span><span class="o">.</span><span class="n">scrollWidth</span><span class="p">;</span> <span class="o">//</span> <span class="err">获得元素的宽</span>
+</span><span class='line'>  <span class="n">var</span> <span class="n">oHeight</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">body</span><span class="o">.</span><span class="n">scrollHeight</span> <span class="o">||</span> <span class="n">document</span><span class="o">.</span><span class="n">documentElement</span><span class="o">.</span><span class="n">scrollHeight</span><span class="p">;</span> <span class="o">//</span> <span class="err">获得元素的高</span>
+</span><span class='line'>  <span class="n">oBox</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="p">(</span><span class="n">oWidth</span> <span class="o">-</span> <span class="n">oBox</span><span class="o">.</span><span class="n">offsetWidth</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="s">&quot;px&quot;</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">oBox</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">top</span> <span class="o">=</span> <span class="p">(</span><span class="n">oHeight</span> <span class="o">-</span> <span class="n">oBox</span><span class="o">.</span><span class="n">offsetHeight</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="s">&quot;px&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在线预览：<a href="http://codepen.io/anon/pen/tDHJI/">点击这里</a></p>
 
 <br />
 
@@ -573,6 +626,12 @@
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
 <span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">/*</span> <span class="n">JS</span><span class="err">方式</span> <span class="o">*/</span>
 </span><span class='line'><span class="n">function</span> <span class="n">Ajax</span><span class="p">()</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">var</span> <span class="n">XHR</span> <span class="o">=</span> <span class="n">null</span><span class="p">;</span>
@@ -582,7 +641,13 @@
 </span><span class='line'>  <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">window</span><span class="o">.</span><span class="n">XMLHttpRequest</span><span class="p">)</span> <span class="p">{</span> <span class="o">//</span> <span class="err">除</span><span class="n">IE5</span> <span class="mi">6</span><span class="err">以外的浏览器</span>
 </span><span class='line'>    <span class="n">XHR</span> <span class="o">=</span> <span class="n">new</span> <span class="n">XMLHttpRequest</span><span class="p">();</span> <span class="o">/*</span> <span class="n">XMLHttpRequest</span><span class="err">是</span><span class="n">window</span><span class="err">的子对象，实例化一个</span><span class="n">XMLHttpRequest</span><span class="err">对象</span> <span class="o">*/</span>
 </span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="n">XML</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;POST&quot;</span><span class="p">,</span> <span class="s">&quot;test.php&quot;</span><span class="p">,</span> <span class="n">true</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">XHR</span><span class="o">.</span><span class="n">onreadystatechange</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">if</span><span class="p">(</span><span class="n">XHR</span><span class="o">.</span><span class="n">readyState</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="n">XHR</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">alert</span><span class="p">(</span><span class="s">&quot;Done!&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="n">XML</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;POST&quot;</span><span class="p">,</span> <span class="s">&quot;test.txt&quot;</span><span class="p">,</span> <span class="n">true</span><span class="p">);</span>
+</span><span class='line'>  <span class="n">XML</span><span class="o">.</span><span class="n">send</span><span class="p">();</span>
 </span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -603,15 +668,146 @@
 
 <h3>1.前端应该使用MVC实现吗？说说你的看法和实现的思想</h3>
 
+<p>应该，有如下优点：</p>
+
+<ol>
+<li>脚本代码更加简洁、规范，便于代码维护</li>
+<li>独立的脚本代码更容易测试与调试</li>
+<li>行为层次的独立增加了脚本代码复用的可能</li>
+</ol>
+
+
 <br />
 
 
 <h3>2.你如何让结构样式分离，你的哪些优化方法，如何解决兼容性问题？</h3>
 
+<p>结构样式分离：</p>
+
+<ol>
+<li>JS代码只出现在.js文件中</li>
+<li>在HTML代码中不出现onload、onclick，所有行为都使用绑定的方式来实现</li>
+<li>只关注行为，不能在JS中定义CSS样式</li>
+</ol>
+
+
+<p>优化方法：
+出门右转《高性能网站建设指南》</p>
+
+<p>解决兼容性：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">//</span> <span class="err">条件注释法</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">!</span><span class="o">--</span><span class="p">[</span><span class="k">if</span> <span class="n">lt</span> <span class="n">IE</span> <span class="mi">9</span><span class="p">]</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;test.css&quot;</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">!</span><span class="p">[</span><span class="n">endif</span><span class="p">]</span><span class="o">--&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="n">Hack</span><span class="err">方法</span>
+</span><span class='line'><span class="o">//</span> <span class="err">子选择器</span> <span class="n">IE6</span><span class="err">以更低版本不支持</span>
+</span><span class='line'><span class="n">html</span><span class="o">&gt;</span><span class="n">body</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">12</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="err">属性选择器</span> <span class="n">IE6</span><span class="err">以更低版本不支持</span>
+</span><span class='line'><span class="n">div</span><span class="p">[</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;box&quot;</span><span class="p">]</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="c">#fff;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="err">星号</span><span class="n">html</span> <span class="n">IE6</span><span class="err">及更低版本支持</span>
+</span><span class='line'><span class="o">*</span> <span class="n">html</span> <span class="n">p</span> <span class="p">{</span> <span class="o">//</span> <span class="n">IE6</span>
+</span><span class='line'>    <span class="n">color</span><span class="p">:</span> <span class="n">blue</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">*+</span><span class="n">html</span> <span class="n">p</span> <span class="p">{</span> <span class="o">//</span> <span class="n">IE7</span>
+</span><span class='line'>    <span class="n">color</span><span class="p">:</span> <span class="n">yellow</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="err">!</span><span class="n">important</span>
+</span><span class='line'><span class="o">.</span><span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">yellow</span> <span class="err">!</span><span class="n">important</span><span class="p">;</span> <span class="o">//</span> <span class="n">IE6</span><span class="err">及更低版本不支持!</span><span class="n">important</span><span class="err">，因此第二条生效</span>
+</span><span class='line'>    <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="err">下划线</span>
+</span><span class='line'><span class="o">.</span><span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">yellow</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">_background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span> <span class="o">//</span> <span class="n">IE6</span><span class="err">及更低版本忽略下划线，因此覆盖第一条</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="err">属性星号</span>
+</span><span class='line'><span class="o">.</span><span class="n">test</span> <span class="p">{</span>
+</span><span class='line'>    <span class="o">*</span><span class="n">color</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span> <span class="o">//</span> <span class="n">IE6</span><span class="err">、</span><span class="mi">7</span><span class="err">都会生效</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 <br />
 
 
 <h3>3.你对HTML5和CSS3的了解</h3>
+
+<p>HTML5新增：</p>
+
+<ol>
+<li>语义化标签：<code>&lt;header&gt;，&lt;nav&gt;，&lt;section&gt;，&lt;aside&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;hgroup&gt;，&lt;figure&gt;</code></li>
+<li>媒体播放<code>&lt;video&gt;，&lt;audio&gt;</code></li>
+<li>二维绘图<code>&lt;canvas&gt;</code></li>
+<li>表单属性和类型<code>required</code>，<code>placeholder</code>，<code>autofocus</code>，<code>autocomplete</code></li>
+<li>API<code>拖放，Web存储，应用缓存，地理定位，WebScocks，SVG</code></li>
+</ol>
+
+
+<p>CSS3新增：</p>
+
+<ol>
+<li>边框<code>border-radius</code>，<code>box-shadow</code></li>
+<li>背景<code>background-size</code>，<code>background-origin</code></li>
+<li>文本效果<code>text-shadow</code>，<code>word-wrap</code></li>
+<li>字体<code>@font-face</code></li>
+<li>2D,3D转换<code>tansfrom</code></li>
+<li>过渡<code>tansition</code></li>
+<li>动画<code>@keyframes</code></li>
+<li>多列<code>column-count</code></li>
+</ol>
+
 
 <br />
 
