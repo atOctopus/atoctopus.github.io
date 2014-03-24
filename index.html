@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Jason Lin</title>
+	<title>前端一锅粥</title>
 	<meta name="author" content="Jason Lin">
 
 	
@@ -15,7 +15,7 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link href="/atom.xml" rel="alternate" title="Jason Lin" type="application/atom+xml">
+	<link href="/atom.xml" rel="alternate" title="前端一锅粥" type="application/atom+xml">
 	
 	<link rel="canonical" href="http://www.atoctopus.com/">
 	<link href="/favicon.png" rel="shortcut icon">
@@ -40,7 +40,7 @@
 		document.write("<img src='http://www.gravatar.com/avatar/" + MD5("") + "?s=160' alt='Profile Picture' style='width: 160px;' />");
 	</script>
 </div>
-<h1><a href="/">Jason Lin</a></h1>
+<h1><a href="/">前端一锅粥</a></h1>
 <p class="subtitle">A blogging framework for hackers.</p>
 <nav id="main-nav"><ul class="main-navigation">
   <li><a href="/">Blog</a></li>
@@ -67,7 +67,7 @@
 	</div>
 </nav>
 <hgroup>
-  <h1><a href="/">Jason Lin</a></h1>
+  <h1><a href="/">前端一锅粥</a></h1>
   
     <h2>A blogging framework for hackers.</h2>
   
@@ -103,6 +103,8 @@
 		<div class="tags">
 
 </div>
+		
+			<span class="comments"><a href="/blog/2014/03/19/interview/#disqus_thread">Comments</a></span>
 		
 	</div>
 	<h1 class="title" itemprop="name"><a href="/blog/2014/03/19/interview/" itemprop="url">一名应届生的面试题</a></h1>
@@ -400,10 +402,82 @@
 <p>因为flash和select是以窗口形式显示，窗口形式要优于非窗口形式</p>
 
 
-<p><code>
-/* Flash */
-将Flash的wmode属性默认值window改为"opaque"或"transparent"
-</code></p>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">/*</span> <span class="err">让</span><span class="n">div</span><span class="err">在</span><span class="n">flash</span><span class="err">之上</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">object</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">/*</span> <span class="err">将</span><span class="n">wmode</span><span class="err">属性默认值</span><span class="n">window</span><span class="err">改为</span><span class="s">&quot;opaque&quot;</span><span class="err">或</span><span class="s">&quot;transparent&quot;</span> <span class="o">*/</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">embed</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;/example.swf&quot;</span> <span class="n">wmode</span><span class="o">=</span><span class="s">&quot;transparent&quot;</span><span class="o">&gt;&lt;/</span><span class="n">embed</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="nb">object</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="n">div</span><span class="err">在</span><span class="n">select</span><span class="err">之上</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">//</span> <span class="err">通过</span><span class="n">iframe</span><span class="err">覆盖</span><span class="n">select</span><span class="err">，</span><span class="n">div</span><span class="err">覆盖</span><span class="n">iframe</span><span class="err">的方式实现</span>
+</span><span class='line'><span class="o">//</span> <span class="n">HTML</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">select</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">option</span><span class="o">&gt;</span><span class="mi">3</span><span class="o">&lt;/</span><span class="n">option</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">select</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;top&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="o">&lt;</span><span class="n">iframe</span><span class="o">&gt;&lt;/</span><span class="n">iframe</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span> <span class="n">CSS</span>
+</span><span class='line'><span class="o">.</span><span class="n">top</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">position</span><span class="p">:</span> <span class="n">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">width</span><span class="p">:</span> <span class="mi">100</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">height</span><span class="p">:</span> <span class="mi">100</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">z</span><span class="o">-</span><span class="n">index</span><span class="p">:</span> <span class="mi">999</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">top</span> <span class="n">iframe</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">position</span><span class="p">:</span> <span class="n">absolute</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">width</span><span class="p">:</span> <span class="mi">100</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">height</span><span class="p">:</span> <span class="mi">100</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>    <span class="n">z</span><span class="o">-</span><span class="n">index</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 
 <br />
 
@@ -556,6 +630,99 @@
 <h2>JavaScript jQuery部分</h2>
 
 <h3>1.写一个原型unique方法，要求将数组中重复的项去掉</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">function</span> <span class="n">Array</span><span class="p">()</span> <span class="p">{}</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">方法一</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">Array</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">unique1</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">var</span> <span class="n">n</span> <span class="o">=</span> <span class="p">[];</span> <span class="o">//</span> <span class="err">临时数组</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="n">var</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">data</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="o">//</span> <span class="err">循环数组，通过能否获得值的下标来判断数组是否存在</span>
+</span><span class='line'>            <span class="n">n</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">调用原型方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">var</span> <span class="n">result1</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Array</span><span class="p">();</span>
+</span><span class='line'><span class="n">result1</span><span class="o">.</span><span class="n">unique1</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">16</span><span class="p">]);</span> <span class="o">//</span> <span class="err">返回</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="err">方法二</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">Array</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">unique2</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">var</span> <span class="n">n</span> <span class="o">=</span> <span class="p">{};</span> <span class="o">//</span> <span class="err">临时</span><span class="nb">hash</span>
+</span><span class='line'>    <span class="n">var</span> <span class="n">r</span> <span class="o">=</span> <span class="p">[];</span> <span class="o">//</span> <span class="err">临时数组</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="n">var</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">data</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="err">!</span><span class="n">n</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]])</span> <span class="p">{</span> <span class="o">//</span> <span class="err">判断</span><span class="nb">hash</span><span class="err">中是否存在这个项</span>
+</span><span class='line'>            <span class="n">n</span><span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">true</span><span class="p">;</span> <span class="o">//</span> <span class="err">创建一个新项</span>
+</span><span class='line'>            <span class="n">r</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span> <span class="o">//</span> <span class="err">将值存入数组中</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">调用原型方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">var</span> <span class="n">result2</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Array</span><span class="p">();</span>
+</span><span class='line'><span class="n">result2</span><span class="o">.</span><span class="n">unique2</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">16</span><span class="p">]);</span> <span class="o">//</span> <span class="err">返回</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="err">方法三</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">Array</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">unique3</span> <span class="o">=</span> <span class="n">function</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">var</span> <span class="n">n</span> <span class="o">=</span> <span class="p">[</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]];</span>
+</span><span class='line'>    <span class="k">for</span><span class="p">(</span><span class="n">var</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">data</span><span class="o">.</span><span class="n">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">if</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">indexOf</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span> <span class="o">//</span> <span class="err">通过判断数组值的下标与</span><span class="n">i</span><span class="err">的值是否相等，实现去掉重复</span>
+</span><span class='line'>            <span class="n">n</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">调用原型方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="n">var</span> <span class="n">result3</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Array</span><span class="p">();</span>
+</span><span class='line'><span class="n">result3</span><span class="o">.</span><span class="n">unique3</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">26</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span><span class="mi">16</span><span class="p">]);</span> <span class="o">//</span> <span class="err">返回</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">16</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 
 <br />
 
@@ -747,7 +914,9 @@
 <span class='line-number'>38</span>
 <span class='line-number'>39</span>
 <span class='line-number'>40</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">//</span> <span class="err">条件注释法</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">//</span> <span class="err">过滤</span>
+</span><span class='line'><span class="o">//</span> <span class="err">条件注释法</span>
 </span><span class='line'><span class="o">&lt;</span><span class="err">!</span><span class="o">--</span><span class="p">[</span><span class="k">if</span> <span class="n">lt</span> <span class="n">IE</span> <span class="mi">9</span><span class="p">]</span><span class="o">&gt;</span>
 </span><span class='line'>    <span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s">&quot;test.css&quot;</span><span class="o">&gt;</span>
 </span><span class='line'><span class="o">&lt;</span><span class="err">!</span><span class="p">[</span><span class="n">endif</span><span class="p">]</span><span class="o">--&gt;</span>
@@ -813,7 +982,7 @@
 <li>背景<code>background-size</code>，<code>background-origin</code></li>
 <li>文本效果<code>text-shadow</code>，<code>word-wrap</code></li>
 <li>字体<code>@font-face</code></li>
-<li>2D,3D转换<code>tansfrom</code></li>
+<li>2D，3D转换<code>tansfrom</code></li>
 <li>过渡<code>tansition</code></li>
 <li>动画<code>@keyframes</code></li>
 <li>多列<code>column-count</code></li>
@@ -897,6 +1066,8 @@
 
 
 </div>
+		
+			<span class="comments"><a href="/blog/2014/03/19/wangzhanyouhua/#disqus_thread">Comments</a></span>
 		
 	</div>
 	<h1 class="title" itemprop="name"><a href="/blog/2014/03/19/wangzhanyouhua/" itemprop="url">【学习笔记】高性能网站建设指南</a></h1>
@@ -1056,6 +1227,19 @@ Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Sha
 })(jQuery);
 </script> <!-- Delete or comment this line to disable Fancybox -->
 
+
+<script type="text/javascript">
+      var disqus_shortname = 'atoctopus';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
