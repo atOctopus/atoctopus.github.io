@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 生活 | 前端笔墨砚]]></title>
+  <link href="http://www.atoctopus.com/blog/categories/sheng-huo/atom.xml" rel="self"/>
+  <link href="http://www.atoctopus.com/"/>
+  <updated>2014-03-24T03:45:30-07:00</updated>
+  <id>http://www.atoctopus.com/</id>
+  <author>
+    <name><![CDATA[Lin]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[一名应届生的面试题]]></title>
+    <link href="http://www.atoctopus.com/blog/2014/03/19/interview/"/>
+    <updated>2014-03-19T00:57:38-07:00</updated>
+    <id>http://www.atoctopus.com/blog/2014/03/19/interview</id>
+    <content type="html"><![CDATA[<p>最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。面试结束后重新思考发现错误挺多的，需要学习的地方还有很多，记录于此引以为戒。</p>
+
+
+<hr />
+
+<h2>HTML部分</h2>
+
+<h3>1.使用HTML完成以下表格</h3>
+
+<p><img src="http://www.atoctopus.com/images/post/interview/html01.png" alt="HTML第一题" /></p>
+
+<p>```python
+<form method="post" active="#">
+  <table cellspacing="0" cellpadding="5" border="1" summary="一个员工意见提交表"></p>
+
+<pre><code>&lt;caption&gt;意见提交表&lt;/caption&gt;
+&lt;tr&gt;
+  &lt;th scope="row"&gt;姓名&lt;/th&gt;
+  &lt;td&gt;
+    &lt;input type="text" name="name"&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th scope="row"&gt;性别&lt;/th&gt;
+  &lt;td&gt;
+    &lt;input id="male" type="radio" value="male" name="sex" checked="checked"&gt;
+    &lt;label for="male"&gt;男&lt;/label&gt;
+    &lt;input id="female" type="radio" value="female" name="sex"&gt;
+    &lt;label for="female"&gt;女&lt;/label&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th scope="row"&gt;类型&lt;/th&gt;
+  &lt;td&gt;
+    &lt;input id="checkbox1" type="checkbox" value="checkbox1" name="checkboxAll" checked="checked"&gt;
+    &lt;label for="checkbox1"&gt;类型一&lt;/label&gt;
+    &lt;input id="checkbox2" type="checkbox" value="checkbox2" name="checkboxAll"&gt;
+    &lt;label for="checkbox2"&gt;类型二&lt;/label&gt;
+    &lt;input id="checkbox3" type="checkbox" value="checkbox3" name="checkboxAll"&gt;
+    &lt;label for="checkbox3"&gt;类型三&lt;/label&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th scope="row"&gt;部门&lt;/th&gt;
+  &lt;td&gt;
+    &lt;select&gt;
+      &lt;option value="ue"&gt;UE部&lt;/option&gt;
+      &lt;option value="ui" selected="selected"&gt;UI部&lt;/option&gt;
+      &lt;option value="ue"&gt;UD部&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th scope="row"&gt;上传文件&lt;/th&gt;
+  &lt;td&gt;
+    &lt;input type="file"&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;th scope="row"&gt;内容&lt;/th&gt;
+  &lt;td&gt;
+    &lt;textarea rows="5" cols="22"&gt;&lt;/textarea&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td colspan="2" class="submit"&gt;
+    &lt;input type="submit" value="提交"&gt;
+    &lt;input type="reset" value="清除"&gt;
+  &lt;/td&gt;
+&lt;/tr&gt;
+</code></pre>
+
+<p>  </table>
+</form>
+```</p>
+
+<p>在线预览：<a href="http://codepen.io/anon/pen/JnHwC/">点击这里</a></p>
+
+<br />
+
+
+<h3>2.依旧是使用HTML完成以下图片</h3>
+
+<p><img src="http://www.atoctopus.com/images/post/interview/html02.png" alt="HTML第二题" /></p>
+
+<p>```python</p>
+
+<table cellspacing="0" cellpadding="10" border="1">
+  <tr>
+    <th colspan="4" scope="col">联系方式</th>
+  </tr>
+  <tr>
+    <th rowspan="2" scope="row">test</th>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+  </tr>
+  <tr>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+  </tr>
+  <tr>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+    <td>test</td>
+  <tr>
+    <th colspan="3" scope="row">test</th>
+    <td>test</ted>
+  </tr>
+</table>
+
+
+<p>```
+在线预览：<a href="http://codepen.io/anon/pen/ClmyB/">点击这里</a></p>
+
+<br />
+
+
+<hr />
+
+<h2>CSS部分</h2>
+
+<h3>1.三个div并排，左右div为固宽200px，中间自适应。</h3>
+
+<p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" /></p>
+
+<p>```python</p>
+
+<div id="box">
+  <div class="left">...</div>
+  <div class="right">...</div>
+  <div class="center">...</div>
+</div>
+
+
+<h1>box {</h1>
+
+<p>  border: 1px solid #000;
+  overflow: hidden;
+}
+.left {
+  float: left;
+  width: 200px;
+  background: red;
+}
+.right {
+  float: right;
+  width: 200px;
+  background: yellow;
+}
+.center {
+  margin: 0 200px;
+  background: blue;
+}
+```</p>
+
+<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">点击这里</a></p>
+
+<br />
+
+
+<h3>2.CSS的选择器优先级</h3>
+
+<p><code>!important &gt; 内联 &gt; id &gt; class &gt; tag &gt; *</code></p>
+
+<br />
+
+
+<h3>3.div高初始200px，当内容超过200px时撑开容器</h3>
+
+<p>```python
+.div-test {</p>
+
+<pre><code>min-height: 200px; /* 主流浏览器 */
+height: auto !important; /* Firefox浏览器 */
+height: 200px; /* IE浏览器 */
+</code></pre>
+
+<p>}
+```</p>
+
+<br />
+
+
+<h3>4.让div层在flash和select之上</h3>
+
+<p>因为flash和select是以窗口形式显示，窗口形式要优于非窗口形式</p>
+
+
+<p>```python
+/<em> 让div在flash之上 </em>/</p>
+
+<object>
+    /* 将wmode属性默认值window改为"opaque"或"transparent" */
+    <embed src="http://www.atoctopus.com/example.swf" wmode="transparent"></embed>
+</object>
+
+
+<p>/<em> div在select之上 </em>/
+// 通过iframe覆盖select，div覆盖iframe的方式实现
+// HTML
+<select></p>
+
+<pre><code>&lt;option&gt;1&lt;/option&gt;
+&lt;option&gt;2&lt;/option&gt;
+&lt;option&gt;3&lt;/option&gt;
+</code></pre>
+
+<p></select></p>
+
+<div class="top">
+    <iframe></iframe>
+</div>
+
+
+<p>// CSS
+.top {</p>
+
+<pre><code>position: absolute;
+top: 0;
+left: 0;
+width: 100px;
+height: 100px;
+z-index: 999px;
+</code></pre>
+
+<p>}
+.top iframe {</p>
+
+<pre><code>position: absolute;
+top: 0;
+left: 0;
+width: 100px;
+height: 100px;
+z-index: -1;
+</code></pre>
+
+<p>}
+```</p>
+
+<br />
+
+
+<h3>5.清除浮动的方法</h3>
+
+<p>一般需要使用到浮动清除有两种情况：子元素浮动和上级元素浮动</p>
+
+
+
+
+<p>清除子元素浮动</p>
+
+
+<p>```python
+/<em> clearfix方法 </em>/
+/<em> 精简版 </em>/
+.clearfix:before, .clearfix:after {
+  content: &ldquo;&rdquo;;
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  zoom: 1;
+}</p>
+
+<p>/<em> 经典版 </em>/
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: &ldquo;&rdquo;;
+  clear: both;
+  height: 0;
+}
+// IE6
+* html .clearfix {
+  zoom: 1;
+}
+// IE7
+*:first-child+html .clearfix {
+  zoom: 1;
+}</p>
+
+<p>/<em> overflow方法 </em>/
+/<em> 方法一 </em>/</p>
+
+<h1>box {</h1>
+
+<p>  overflow: auto;
+  *zoom: 1;
+}</p>
+
+<p>/<em> 方法二 </em>/</p>
+
+<h1>box {</h1>
+
+<p>  overflow: hidden;
+  *zoom: 1;
+}</p>
+
+<p>/<em> 空标签方法 </em>/
+.clearfix {
+  clear: both;
+}</p>
+
+<div class="clearfix"></div>
+
+
+<p>  // 插入到浮动元素之后，不推荐！添加了不必要的代码</p>
+
+<p>/<em> 为父元素增加float方法 </em>/
+// 但这带来的影响是下个元素会受这个元素影响，导致页面需要大量的浮动</p>
+
+<p>```</p>
+
+<p>清除上级元素浮动</p>
+
+
+<p><code>
+使用float 或者 clear
+</code></p>
+
+<br />
+
+
+<h3>6.px、em和百分比之间的区别</h3>
+
+<ul>
+<li>px是绝对度量单位，相对于显示器分辨率</li>
+<li>em是相对度量单位，相对于文本字号。例如浏览器默认字体16px，那么1em等于16px，14px等于0.875em</li>
+<li>百分比也是相对度量单位是相对于主体</li>
+</ul>
+
+
+<br />
+
+
+<hr />
+
+<h2>JavaScript jQuery部分</h2>
+
+<h3>1.写一个原型unique方法，要求将数组中重复的项去掉</h3>
+
+<p>```python
+function Array() {}
+/<em> 方法一 </em>/
+Array.prototype.unique1(data) {</p>
+
+<pre><code>var n = []; // 临时数组
+for(var i=0; i&lt;data.length; i++) {
+    if(n.indexOf(data[i]) == -1) { // 循环数组，通过能否获得值的下标来判断数组是否存在
+        n.push(data[i]);
+    }
+}
+return n;
+</code></pre>
+
+<p>}
+/<em> 调用原型方法 </em>/
+var result1 = new Array();
+result1.unique1([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]</p>
+
+<p>/<em> 方法二 </em>/
+Array.prototype.unique2(data) {</p>
+
+<pre><code>var n = {}; // 临时hash
+var r = []; // 临时数组
+for(var i=0; i&lt;data.length; i++) {
+    if(!n[data[i]]) { // 判断hash中是否存在这个项
+        n[data[i]] = true; // 创建一个新项
+        r.push(data[i]); // 将值存入数组中
+    }
+}
+return r;
+</code></pre>
+
+<p>}
+/<em> 调用原型方法 </em>/
+var result2 = new Array();
+result2.unique2([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]</p>
+
+<p>/<em> 方法三 </em>/
+Array.prototype.unique3 = function(data) {</p>
+
+<pre><code>var n = [data[0]];
+for(var i=1; i&lt;data.length; i++) {
+    if(data.indexOf(data[i] == i) { // 通过判断数组值的下标与i的值是否相等，实现去掉重复
+        n.push(data[i]);
+    }
+}
+return n;
+</code></pre>
+
+<p>}
+/<em> 调用原型方法 </em>/
+var result3 = new Array();
+result3.unique3([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]
+```</p>
+
+<br />
+
+
+<h3>2.jQuery的经典写法有什么好处</h3>
+
+<br />
+
+
+<h3>3.如何解决多人开发函数命名重命的问题</h3>
+
+<blockquote><ul>
+<li>开发前规范命名规则，根据不同的开发人员使用特殊的前缀，如：阿林<code>funciton ALifunction() {}</code></li>
+<li>将每个开发人员的函数封装到类中，调用的时候就调用类的函数，即使函数重名只要类名不重复</li>
+</ul>
+</blockquote>
+
+<br />
+
+
+<h3>4.CSS、JS混合题，让元素绝对居中</h3>
+
+<p>```python</p>
+
+<p>/<em> HTML </em>/</p>
+
+<div id="box"></div>
+
+
+<p>/<em> CSS </em>/</p>
+
+<h1>box {</h1>
+
+<p>  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #07d;
+}</p>
+
+<p>/<em> JS </em>/
+window.onload = function() {
+  var oBox = document.getElementById(&ldquo;box&rdquo;); // 获得元素
+  var oWidth = document.body.scrollWidth || document.documentElement.scrollWidth; // 获得元素的宽
+  var oHeight = document.body.scrollHeight || document.documentElement.scrollHeight; // 获得元素的高
+  oBox.style.left = (oWidth &ndash; oBox.offsetWidth) / 2 + &ldquo;px&rdquo;;
+  oBox.style.top = (oHeight &ndash; oBox.offsetHeight) / 2 + &ldquo;px&rdquo;;
+}
+```</p>
+
+<p>在线预览：<a href="http://codepen.io/anon/pen/tDHJI/">点击这里</a></p>
+
+<br />
+
+
+<h3>5.使用Ajax上传一个文件</h3>
+
+<p>```python
+/<em> JS方式 </em>/
+function Ajax() {
+  var XHR = null;
+  if(window.ActiveXObject) { /<em> IE5 6是以ActiveObject的方式引入XMLHttpRequest对象的 </em>/</p>
+
+<pre><code>XHR = new ActiveXObject("Microsoft.XMLHTTP");
+</code></pre>
+
+<p>  }
+  else if(window.XMLHttpRequest) { // 除IE5 6以外的浏览器</p>
+
+<pre><code>XHR = new XMLHttpRequest(); /* XMLHttpRequest是window的子对象，实例化一个XMLHttpRequest对象 */
+</code></pre>
+
+<p>  }
+  XHR.onreadystatechange = function() {</p>
+
+<pre><code>if(XHR.readyState == 4 &amp;&amp; XHR.status == 200) {
+  alert("Done!");
+}
+</code></pre>
+
+<p>  }
+  XML.open(&ldquo;POST&rdquo;, &ldquo;test.txt&rdquo;, true);
+  XML.send();
+}
+```</p>
+
+<br />
+
+
+<h3>6.写出深度clone</h3>
+
+<br />
+
+
+<hr />
+
+<h2>其他</h2>
+
+<h3>1.前端应该使用MVC实现吗？说说你的看法和实现的思想</h3>
+
+<p>应该，有如下优点：</p>
+
+<ol>
+<li>脚本代码更加简洁、规范，便于代码维护</li>
+<li>独立的脚本代码更容易测试与调试</li>
+<li>行为层次的独立增加了脚本代码复用的可能</li>
+</ol>
+
+
+<br />
+
+
+<h3>2.你如何让结构样式分离，你的哪些优化方法，如何解决兼容性问题？</h3>
+
+<p>结构样式分离：</p>
+
+<ol>
+<li>JS代码只出现在.js文件中</li>
+<li>在HTML代码中不出现onload、onclick，所有行为都使用绑定的方式来实现</li>
+<li>只关注行为，不能在JS中定义CSS样式</li>
+</ol>
+
+
+<p>优化方法：
+出门右转《高性能网站建设指南》</p>
+
+<p>解决兼容性：
+```python
+// 过滤
+// 条件注释法</p>
+
+<!--[if lt IE 9]>
+    <link rel="stylesheet" href="test.css"> 
+<![endif]-->
+
+
+<p>// Hack方法
+// 子选择器 IE6以更低版本不支持
+html>body {</p>
+
+<pre><code>font-size: 12px;
+</code></pre>
+
+<p>}</p>
+
+<p>// 属性选择器 IE6以更低版本不支持
+div[id=&ldquo;box&rdquo;] {</p>
+
+<pre><code>background-color: #fff;
+</code></pre>
+
+<p>}</p>
+
+<p>// 星号html IE6及更低版本支持
+* html p { // IE6</p>
+
+<pre><code>color: blue;
+</code></pre>
+
+<p>}
+*+html p { // IE7</p>
+
+<pre><code>color: yellow;
+</code></pre>
+
+<p>}</p>
+
+<p>// !important
+.test {</p>
+
+<pre><code>background-color: yellow !important; // IE6及更低版本不支持!important，因此第二条生效
+background-color: red;
+</code></pre>
+
+<p>}</p>
+
+<p>// 下划线
+.test {</p>
+
+<pre><code>background-color: yellow;
+_background-color: red; // IE6及更低版本忽略下划线，因此覆盖第一条
+</code></pre>
+
+<p>}</p>
+
+<p>// 属性星号
+.test {</p>
+
+<pre><code>*color: red; // IE6、7都会生效
+</code></pre>
+
+<p>}
+```</p>
+
+<br />
+
+
+<h3>3.你对HTML5和CSS3的了解</h3>
+
+<p>HTML5新增：</p>
+
+<ol>
+<li>语义化标签：<code>&lt;header&gt;，&lt;nav&gt;，&lt;section&gt;，&lt;aside&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;hgroup&gt;，&lt;figure&gt;</code></li>
+<li>媒体播放<code>&lt;video&gt;，&lt;audio&gt;</code></li>
+<li>二维绘图<code>&lt;canvas&gt;</code></li>
+<li>表单属性和类型<code>required</code>，<code>placeholder</code>，<code>autofocus</code>，<code>autocomplete</code></li>
+<li>API<code>拖放，Web存储，应用缓存，地理定位，WebScocks，SVG</code></li>
+</ol>
+
+
+<p>CSS3新增：</p>
+
+<ol>
+<li>边框<code>border-radius</code>，<code>box-shadow</code></li>
+<li>背景<code>background-size</code>，<code>background-origin</code></li>
+<li>文本效果<code>text-shadow</code>，<code>word-wrap</code></li>
+<li>字体<code>@font-face</code></li>
+<li>2D，3D转换<code>tansfrom</code></li>
+<li>过渡<code>tansition</code></li>
+<li>动画<code>@keyframes</code></li>
+<li>多列<code>column-count</code></li>
+</ol>
+
+
+<br />
+
+
+<h3>4.列出你知道的CSS框架和JS框架，并说明其有缺点</h3>
+
+<p>CSS框架</p>
+
+
+<blockquote><ul>
+<li><code>jQuery UI</code></li>
+<li><code>BootStrap</code></li>
+</ul>
+</blockquote>
+
+<p>JS框架</p>
+
+
+<blockquote><ul>
+<li><code>Prototype</code></li>
+<li>优：对JS的内置对象（例如String对象、Array对象等）做了大量的扩展。</li>
+<li>缺：成型年代早，整体上面向对象的编程思想不到位。</li>
+<li><code>Dojo</code></li>
+<li>优：提供了其他JS库所没有的功能。例如离线存储API、生成图标的组件、基于SVG/VML的矢量图形库和Comet支持等。非常适合企业级应用的JS库。</li>
+<li>缺：学习曲线陡，文档不齐全，API不稳定。</li>
+<li><code>YUI</code></li>
+<li>优：YUI封装了一系列比较丰富的功能，例如DOM操作和Ajax应用等，同时还包括了几个核心的CSS文件，文档极其完备，代码编写非常规范。</li>
+<li><code>Ext JS</code></li>
+<li>优：YUI的一个扩展，主要用于前端界面，Ext可以用来开发富有华丽外观的富客户端应用。</li>
+<li>缺：Ext侧重于界面，本身比较臃肿，需要付费。</li>
+<li><code>MooTools</code></li>
+<li>优：轻量、简洁、模块化和面向对象。语法与prototype相差无几，提供了强大的功能、更好的扩展性和兼容性。模块化思想优秀，语法简洁直观，文档完善。</li>
+<li><code>jQuery</code></li>
+<li>轻量级</li>
+<li>强大的DOM选择器</li>
+<li>出色的DOM操作的封装</li>
+<li>可靠的事件处理机制</li>
+<li>完善的Ajax</li>
+<li>不污染顶级变量</li>
+<li>出色的浏览器兼容</li>
+<li>链式操作方式</li>
+<li>隐式迭代</li>
+<li>行为层与结构层分离</li>
+<li>丰富的插件支持</li>
+<li>完善的文档</li>
+<li>开源</li>
+</ul>
+</blockquote>
+]]></content>
+  </entry>
+  
+</feed>
