@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 性能优化 | 前端一锅粥]]></title>
+  <title><![CDATA[Category: 性能优化 | 前端纸墨砚]]></title>
   <link href="http://www.atoctopus.com/blog/categories/xing-neng-you-hua/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-03-23T23:17:50-07:00</updated>
+  <updated>2014-03-24T02:14:14-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
-    <name><![CDATA[Jason Lin]]></name>
+    <name><![CDATA[Lin]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
