@@ -4,7 +4,7 @@
   <title><![CDATA[前端笔墨砚]]></title>
   <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-03-24T09:36:58-07:00</updated>
+  <updated>2014-03-27T23:22:39-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Lin]]></name>
@@ -19,6 +19,8 @@
     <updated>2014-03-19T00:57:38-07:00</updated>
     <id>http://www.atoctopus.com/blog/2014/03/19/interview</id>
     <content type="html"><![CDATA[<p>最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。面试结束后重新思考发现错误挺多的，需要学习的地方还有很多，记录于此引以为戒。</p>
+
+<!--more-->
 
 
 <hr />
@@ -221,7 +223,8 @@
 
 <h3>1.三个div并排，左右div为固宽200px，中间自适应。</h3>
 
-<p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" /></p>
+<p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" />
+两中方法实现：浮动和定位</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -247,12 +250,39 @@
 <span class='line-number'>22</span>
 <span class='line-number'>23</span>
 <span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;box&quot;</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;left&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;right&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
 </span><span class='line'>  <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;center&quot;</span><span class="o">&gt;...&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
 </span><span class='line'><span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
 </span><span class='line'>
+</span><span class='line'><span class="o">//</span><span class="err">方法一：浮动</span>
 </span><span class='line'><span class="c">#box {</span>
 </span><span class='line'>  <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c">#000;</span>
 </span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
@@ -271,10 +301,35 @@
 </span><span class='line'>  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
 </span><span class='line'>  <span class="n">background</span><span class="p">:</span> <span class="n">blue</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">//</span><span class="err">方法二：定位</span>
+</span><span class='line'><span class="c">#box {</span>
+</span><span class='line'>  <span class="n">position</span><span class="p">:</span> <span class="n">relative</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">border</span><span class="p">:</span> <span class="mi">1</span><span class="n">px</span> <span class="n">solid</span> <span class="c">#000;</span>
+</span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">left</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">position</span><span class="p">:</span> <span class="n">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">width</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">background</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">right</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">position</span><span class="p">:</span> <span class="n">absolute</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">right</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">width</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">background</span><span class="p">:</span> <span class="n">yellow</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">.</span><span class="n">center</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">margin</span><span class="p">:</span> <span class="mi">0</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">background</span><span class="p">:</span> <span class="n">blue</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">点击这里</a></p>
+<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">方法一点击这里</a> <a href="http://codepen.io/anon/pen/tAleE/">方法二点击这里</a></p>
 
 <br />
 
@@ -488,25 +543,25 @@
 </span><span class='line'>
 </span><span class='line'><span class="o">/*</span> <span class="n">overflow</span><span class="err">方法</span> <span class="o">*/</span>
 </span><span class='line'><span class="o">/*</span> <span class="err">方法一</span> <span class="o">*/</span>
-</span><span class='line'><span class="c">#box {</span>
+</span><span class='line'><span class="o">.</span><span class="n">test1</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">auto</span><span class="p">;</span>
-</span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">/*</span> <span class="err">方法二</span> <span class="o">*/</span>
-</span><span class='line'><span class="c">#box {</span>
+</span><span class='line'><span class="o">.</span><span class="n">test2</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">overflow</span><span class="p">:</span> <span class="n">hidden</span><span class="p">;</span>
-</span><span class='line'>  <span class="o">*</span><span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>  <span class="n">zoom</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">/*</span> <span class="err">空标签方法</span> <span class="o">*/</span>
-</span><span class='line'><span class="o">.</span><span class="n">clearfix</span> <span class="p">{</span>
-</span><span class='line'>  <span class="n">clear</span><span class="p">:</span> <span class="n">both</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s">&quot;clearfix&quot;</span><span class="o">&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>  <span class="o">//</span> <span class="err">插入到浮动元素之后，不推荐！添加了不必要的代码</span>
+</span><span class='line'><span class="o">&lt;</span><span class="n">br</span> <span class="n">style</span><span class="o">=</span><span class="s">&quot;clear: both;&quot;</span><span class="o">&gt;</span>  <span class="o">//</span> <span class="err">插入到浮动元素最后，不推荐！添加了不必要的代码</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">/*</span> <span class="err">为父元素增加</span><span class="nb">float</span><span class="err">方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">/*</span> <span class="err">父元素浮动方法</span> <span class="o">*/</span>
 </span><span class='line'><span class="o">//</span> <span class="err">但这带来的影响是下个元素会受这个元素影响，导致页面需要大量的浮动</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="err">方法</span> <span class="o">*/</span>
+</span><span class='line'><span class="o">//</span> <span class="err">给父元素添加</span><span class="sb">`display: inline-block`</span><span class="err">来清除浮动</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -734,6 +789,8 @@
 <span class='line-number'>15</span>
 <span class='line-number'>16</span>
 <span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">/*</span> <span class="n">JS</span><span class="err">方式</span> <span class="o">*/</span>
 </span><span class='line'><span class="n">function</span> <span class="n">Ajax</span><span class="p">()</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">var</span> <span class="n">XHR</span> <span class="o">=</span> <span class="n">null</span><span class="p">;</span>
@@ -751,6 +808,8 @@
 </span><span class='line'>  <span class="n">XML</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;POST&quot;</span><span class="p">,</span> <span class="s">&quot;test.txt&quot;</span><span class="p">,</span> <span class="n">true</span><span class="p">);</span>
 </span><span class='line'>  <span class="n">XML</span><span class="o">.</span><span class="n">send</span><span class="p">();</span>
 </span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">/*</span> <span class="n">jQuery</span><span class="err">方法</span> <span class="o">*/</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -759,7 +818,7 @@
 <br />
 
 
-<h3>6.写出深度clone</h3>
+<h3>6.JS中如何对一个对象进行深度clone</h3>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -843,15 +902,6 @@
 
 <h3>1.前端应该使用MVC实现吗？说说你的看法和实现的思想</h3>
 
-<p>应该，有如下优点：</p>
-
-<ol>
-<li>脚本代码更加简洁、规范，便于代码维护</li>
-<li>独立的脚本代码更容易测试与调试</li>
-<li>行为层次的独立增加了脚本代码复用的可能</li>
-</ol>
-
-
 <br />
 
 
@@ -866,8 +916,15 @@
 </ol>
 
 
-<p>优化方法：
+<p>优化方法：</p>
+
+<p>页面级：
 出门右转《高性能网站建设指南》</p>
+
+<p>代码级：
+1.  避免全局变量
+2.  减少DOM操作
+3.  减少重绘页面</p>
 
 <p>解决兼容性：</p>
 
@@ -964,11 +1021,11 @@
 <p>HTML5新增：</p>
 
 <ol>
-<li>语义化标签：<code>&lt;header&gt;，&lt;nav&gt;，&lt;section&gt;，&lt;aside&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;hgroup&gt;，&lt;figure&gt;</code></li>
+<li>语义化标签：<code>&lt;header&gt;，&lt;nav&gt;，&lt;section&gt;，&lt;aside&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;hgroup&gt;，&lt;figure&gt;，&lt;time&gt;</code>等等</li>
 <li>媒体播放<code>&lt;video&gt;，&lt;audio&gt;</code></li>
 <li>二维绘图<code>&lt;canvas&gt;</code></li>
 <li>表单属性和类型<code>required</code>，<code>placeholder</code>，<code>autofocus</code>，<code>autocomplete</code></li>
-<li>API<code>拖放，Web存储，应用缓存，地理定位，WebScocks，SVG</code></li>
+<li>API<code>拖放，Web存储，应用缓存，地理定位，Web Worker，Web Socket，SVG</code></li>
 </ol>
 
 
@@ -1033,6 +1090,11 @@
 <li>开源</li>
 </ul>
 </blockquote>
+
+<br />
+
+
+<p>尾巴：面试题中的答案存在错误的地方，我会在往后的日子里加以完善。</p>
 ]]></content>
   </entry>
   
@@ -1052,6 +1114,11 @@
 
 
 <br />
+
+
+
+
+<!--more-->
 
 
 <h2>规则二：使用内容发布网络</h2>

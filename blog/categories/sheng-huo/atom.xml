@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 生活 | 前端笔墨砚]]></title>
   <link href="http://www.atoctopus.com/blog/categories/sheng-huo/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-03-24T09:36:58-07:00</updated>
+  <updated>2014-03-27T23:22:39-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Lin]]></name>
@@ -19,6 +19,8 @@
     <updated>2014-03-19T00:57:38-07:00</updated>
     <id>http://www.atoctopus.com/blog/2014/03/19/interview</id>
     <content type="html"><![CDATA[<p>最近应聘了一家电子商务B2B公司，公司效率很高。坐下聊两句后就递给一张试卷要求2小时做完。面试结束后重新思考发现错误挺多的，需要学习的地方还有很多，记录于此引以为戒。</p>
+
+<!--more-->
 
 
 <hr />
@@ -143,9 +145,9 @@
 
 <h3>1.三个div并排，左右div为固宽200px，中间自适应。</h3>
 
-<p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" /></p>
-
-<p>```python</p>
+<p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" />
+两中方法实现：浮动和定位
+```python</p>
 
 <div id="box">
   <div class="left">...</div>
@@ -153,6 +155,8 @@
   <div class="center">...</div>
 </div>
 
+
+<p>//方法一：浮动</p>
 
 <h1>box {</h1>
 
@@ -172,10 +176,37 @@
 .center {
   margin: 0 200px;
   background: blue;
+}</p>
+
+<p>//方法二：定位</p>
+
+<h1>box {</h1>
+
+<p>  position: relative;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background: red;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  background: yellow;
+}
+.center {
+  margin: 0 200px;
+  background: blue;
 }
 ```</p>
 
-<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">点击这里</a></p>
+<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">方法一点击这里</a> <a href="http://codepen.io/anon/pen/tAleE/">方法二点击这里</a></p>
 
 <br />
 
@@ -305,36 +336,29 @@ z-index: -1;
 }</p>
 
 <p>/<em> overflow方法 </em>/
-/<em> 方法一 </em>/</p>
-
-<h1>box {</h1>
-
-<p>  overflow: auto;
-  *zoom: 1;
+/<em> 方法一 </em>/
+.test1 {
+  overflow: auto;
+  zoom: 1;
 }</p>
 
-<p>/<em> 方法二 </em>/</p>
-
-<h1>box {</h1>
-
-<p>  overflow: hidden;
-  *zoom: 1;
+<p>/<em> 方法二 </em>/
+.test2 {
+  overflow: hidden;
+  zoom: 1;
 }</p>
 
-<p>/<em> 空标签方法 </em>/
-.clearfix {
-  clear: both;
-}</p>
+<p>/<em> 空标签方法 </em>/</p>
 
-<div class="clearfix"></div>
+<br style="clear: both;">  // 插入到浮动元素最后，不推荐！添加了不必要的代码
 
 
-<p>  // 插入到浮动元素之后，不推荐！添加了不必要的代码</p>
-
-<p>/<em> 为父元素增加float方法 </em>/
+<p>/<em> 父元素浮动方法 </em>/
 // 但这带来的影响是下个元素会受这个元素影响，导致页面需要大量的浮动</p>
 
-<p>```</p>
+<p>/<em> inline-block方法 </em>/
+// 给父元素添加<code>display: inline-block</code>来清除浮动
+```</p>
 
 <p>清除上级元素浮动</p>
 
@@ -513,13 +537,16 @@ function Ajax() {
 <p>  }
   XML.open(&ldquo;POST&rdquo;, &ldquo;test.txt&rdquo;, true);
   XML.send();
-}
-```</p>
+}</p>
+
+<p>/<em> jQuery方法 </em>/</p>
+
+<p>```</p>
 
 <br />
 
 
-<h3>6.写出深度clone</h3>
+<h3>6.JS中如何对一个对象进行深度clone</h3>
 
 <p>```python
 // 浅clone
@@ -579,15 +606,6 @@ alert(obj.a.b); // 10
 
 <h3>1.前端应该使用MVC实现吗？说说你的看法和实现的思想</h3>
 
-<p>应该，有如下优点：</p>
-
-<ol>
-<li>脚本代码更加简洁、规范，便于代码维护</li>
-<li>独立的脚本代码更容易测试与调试</li>
-<li>行为层次的独立增加了脚本代码复用的可能</li>
-</ol>
-
-
 <br />
 
 
@@ -602,8 +620,15 @@ alert(obj.a.b); // 10
 </ol>
 
 
-<p>优化方法：
+<p>优化方法：</p>
+
+<p>页面级：
 出门右转《高性能网站建设指南》</p>
+
+<p>代码级：
+1.  避免全局变量
+2.  减少DOM操作
+3.  减少重绘页面</p>
 
 <p>解决兼容性：
 ```python
@@ -681,11 +706,11 @@ _background-color: red; // IE6及更低版本忽略下划线，因此覆盖第�
 <p>HTML5新增：</p>
 
 <ol>
-<li>语义化标签：<code>&lt;header&gt;，&lt;nav&gt;，&lt;section&gt;，&lt;aside&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;hgroup&gt;，&lt;figure&gt;</code></li>
+<li>语义化标签：<code>&lt;header&gt;，&lt;nav&gt;，&lt;section&gt;，&lt;aside&gt;，&lt;footer&gt;，&lt;article&gt;，&lt;hgroup&gt;，&lt;figure&gt;，&lt;time&gt;</code>等等</li>
 <li>媒体播放<code>&lt;video&gt;，&lt;audio&gt;</code></li>
 <li>二维绘图<code>&lt;canvas&gt;</code></li>
 <li>表单属性和类型<code>required</code>，<code>placeholder</code>，<code>autofocus</code>，<code>autocomplete</code></li>
-<li>API<code>拖放，Web存储，应用缓存，地理定位，WebScocks，SVG</code></li>
+<li>API<code>拖放，Web存储，应用缓存，地理定位，Web Worker，Web Socket，SVG</code></li>
 </ol>
 
 
@@ -750,6 +775,11 @@ _background-color: red; // IE6及更低版本忽略下划线，因此覆盖第�
 <li>开源</li>
 </ul>
 </blockquote>
+
+<br />
+
+
+<p>尾巴：面试题中的答案存在错误的地方，我会在往后的日子里加以完善。</p>
 ]]></content>
   </entry>
   
