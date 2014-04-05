@@ -1,0 +1,745 @@
+.wrap {
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 970px;
+}
+
+.top {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	background: url(../img/index/bg-top.jpg);
+}
+
+.header {
+	position: relative;
+	width: 970px;
+}
+
+.logo {
+	float: left;
+	width: 250px;
+	height: 110px;
+}
+
+.logo a {
+	display: block;
+	width: 250px;
+	height: 110px;
+	background: url(../img/index/logo.png) no-repeat left center;
+	text-indent: -9999px;
+}
+
+.nav {
+	position: absolute;
+	top: 35px;
+	right: 0;
+	width: 550px;
+	height: 35px;
+}
+
+.nav ul {
+	width: 625px;
+	height: 35px;
+}
+
+.nav li {
+	float: left;
+	margin-right: 15px;
+	padding: 8px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #9ba0a5;
+	text-transform: uppercase;
+}
+
+.nav a {
+	padding: 8px 0;
+	-webkit-text-shadow: 0 -1px 0 #000;
+	-moz-text-shadow: 0 -1px 0 #000;
+	-o-text-shadow: 0 -1px 0 #000;
+	text-shadow: 0 -1px 0 #000;
+	color: #fff;
+}
+
+.nav li.on,
+.nav li.selected {
+	background-color: #1f1e21;
+	border-radius: 20px;
+	-webkit-box-shadow: 0 -1px 0 #000;
+	-moz-box-shadow: 0 -1px 0 #000;
+	-o-box-shadow: 0 -1px 0 #000;
+	box-shadow: 0 -1px 0 #000;
+}
+
+.nav li.on a {
+	color: #9ba0a5;
+}
+
+.main {
+	position: relative;
+	border-radius: 10px 10px 0 0;
+	background: url(../img/index/bg-download.jpg) no-repeat top center;
+}
+
+.whatsApp {
+	position: relative;
+	padding: 100px 0 0 400px;
+	width: 570px;
+	height: 340px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	-o-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+.toggleLanguage {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 0 10px;
+	height: 35px;
+	font-size: 14px;
+	color: #496e5d;
+	background-color: #1b201f;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.toggleLanguage .lang-icons,
+.dropDownHeader .lang-icons {
+	display: inline-block;
+	margin: 5px 5px 8px 0;
+	vertical-align: middle;
+	width: 23px;
+	height: 23px;
+	background: url("../img/sprites/lang.png") no-repeat;
+	background-position: 0 0;
+}
+
+.dropDownMenu {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 400px;
+	height: 460px;
+	font-size: 14px;
+	color: #556170;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.dropDownMenu a {
+	color: #556170;
+}
+
+.dropDownMenu .on {
+	color: #64d448;
+}
+
+.dropDownHeader {
+	padding-left: 20px;
+	width: 380px;
+	height: 36px;
+	font-size: 14px;
+	border-bottom: 1px solid #f1f1f1;
+	cursor: pointer;
+}
+
+.dropDownHeader .lang-icons {
+	margin: 6px 5px 10px 0;
+	background-position: 0 -23px;
+}
+
+.dropDownHeader .dropDown {
+	padding-left: 184px;
+}
+
+.dropDownMain {
+	padding: 20px 0 0 20px;
+	width: 380px;
+	height: 362px;
+}
+
+.dropDownMain ul {
+	float: left;
+	width: 120px;
+}
+
+.dropDownMain li {
+	padding-bottom: 9px;
+}
+
+.dropDownFooter {
+	width: 380px;
+	padding: 10px 0 0 20px;
+	border-top: 1px solid #f1f1f1;
+}
+
+.appDescription {
+	float: left;
+	margin-bottom: 25px;
+	width: 570px;
+	height: 65px;
+	font-size: 28px;
+	color: #acd5d4;
+	-webkit-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+	-moz-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+	-o-text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+	text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.appDownload {
+	float: left;
+	margin-bottom: 45px;
+	width: 570px;
+	height: 40px;
+}
+
+.appDownload a {
+	display: block;
+	width: 230px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #68c839 0%, #5fb72b 50%, #57a71f 100%);
+	background: -moz-linear-gradient(top, #68c839 0%, #5fb72b 50%, #57a71f 100%);
+	background: -o-linear-gradient(top, #68c839 0%, #5fb72b 50%, #57a71f 100%);
+	background: linear-gradient(top, #68c839 0%, #5fb72b 50%, #57a71f 100%);
+	border-radius: 20px;
+	-webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+	-webkit-transition: 0.5s all;
+}
+
+.appDownload a {
+	color: #fff;
+	font-size: 18px;
+	-webkit-text-shadow: 0 -1px 0 #888;
+	-moz-text-shadow: 0 -1px 0 #888;
+	-o-text-shadow: 0 -1px 0 #888;
+	text-shadow: 0 -1px 0 #888;
+}
+
+.appDownload a:hover {
+	-webkit-box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.5);
+	-o-box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.5);
+	background: -webkit-linear-gradient(top, #71c349 0%, #63b633 50%, #5da72b 100%);
+	background: -moz-linear-gradient(top, #71c349 0%, #63b633 50%, #5da72b 100%);
+	background: -o-linear-gradient(top, #71c349 0%, #63b633 50%, #5da72b 100%);
+	background: linear-gradient(top, #71c349 0%, #63b633 50%, #5da72b 100%);
+	background: #63b633;
+}
+
+.appFunction {
+	float: left;
+	width: 570px;
+	height: 120px;
+}
+
+.appFunction ul li {
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+.appFunction span {
+	display: block;
+	color: #acd5d4;
+	font-size: 14px;
+}
+
+.appFunction a:hover img {
+	-webkit-transform: scale(1.1) rotate(3deg);
+	-moz-transform: scale(1.1) rotate(3deg);
+	-o-transform: scale(1.1) rotate(3deg);
+	transform: scale(1.1) rotate(3deg);
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+.android {
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	width: 330px;
+	height: 540px;
+	z-index: 999;
+	background: url(../img/index/android.png) no-repeat transparent;
+	background-position: 0 0;
+}
+
+.banner {
+	position: relative;
+	top: 80px;
+	left: 65px;
+	width: 218px;
+	height: 341px;
+	overflow: hidden;
+}
+
+.banner ul {
+	position: absolute;
+	top: 0;
+	width: 1090px;
+}
+
+.android li {
+	float: left;
+	width: 218px;
+	height: 341px;
+}
+
+.android p {
+	position: absolute;
+	left: 115px;
+	bottom: 0;
+	color: #888;
+}
+
+.android p strong {
+	color: #000;
+}
+
+.middle,
+.footer {
+	width: 100%;
+	background: url(../img/index/bg-main.png);
+}
+
+.middleWrap {
+	width: 970px;
+	background-color: #fff;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	-o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.phoneSystem {
+	padding-bottom: 10px;
+	border-top: 10px solid #34af23;
+	background: -webkit-linear-gradient(top, #fff 0%, #eaeaea 50%, #d9d9d9 100%);
+	background: -moz-linear-gradient(top, #fff 0%, #eaeaea 50%, #d9d9d9 100%);
+	background: -o-linear-gradient(top, #fff 0%, #eaeaea 50%, #d9d9d9 100%);
+	background: -webkit-linear-gradient(top, #fff 0%, #eaeaea 50%, #d9d9d9 100%);
+	background: #eaeaea;
+}
+
+.phoneSystem ul {
+	position: relative;
+	width: 570px;
+	margin: 35px 0 0 400px;
+}
+
+.phoneSystem li {
+	float: left;
+	margin-right: 50px;
+	height: 145px;
+}
+
+.phone-top {
+	height: 100px;
+}
+
+.phoneLayoutT {
+	position: relative;
+	display: block;
+	top: 10px;
+	left: 0;
+	margin: 0 5px;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+.phoneLayoutT:hover {
+	top: 0;
+}
+
+.phoneLayoutB {
+	position: relative;
+	display: block;
+	top: 10px;
+	left: 0;
+	margin: 0 5px;
+}
+
+.phone span {
+	position: relative;
+	display: block;
+	color: #888;
+	text-align: center;
+}
+
+.phone-top .iPhoneT {
+	width: 49px;
+	height: 95px;
+	background-position: -123px -2px;
+}
+
+.phone-bottom .iPhoneB {
+	width: 49px;
+	height: 30px;
+	background-position: -123px -96px;
+}
+
+.phone-top .blackBerryT {
+	width: 53px;
+	height: 95px;
+	background-position: -3px -2px;
+}
+
+.phone-bottom .blackBerryB {
+	width: 53px;
+	height: 30px;
+	background-position: -3px -193px;
+}
+
+.phone-top .nokiaT {
+	width: 41px;
+	height: 88px;
+	background-position: -10px -105px;
+}
+
+.phone-bottom .nokiaB {
+	width: 41px;
+	height: 30px;
+	background-position: -129px -186px ;
+}
+
+.phone-top .symbianT {
+	width: 53px;
+	height: 95px;
+	background-position: -64px -1px;
+}
+
+.phone-bottom .symbianB {
+	width: 53px;
+	height: 30px;
+	background-position: -124px -128px ;
+}
+
+.phone-top .windowsT {
+	width: 51px;
+	height: 96px;
+	background-position: -63px -96px;
+}
+
+.phone-bottom .windowsB {
+	width: 53px;
+	height: 30px;
+	background-position: -122px -161px ;
+}
+
+.center {
+	margin: 0 40px;
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.center-left {
+	float: left;
+	width: 550px;
+}
+
+.center-right {
+	float: right;
+	width: 280px;
+}
+
+.howItWorks h2,
+.noads h2 {
+	margin-bottom: 10px;
+	font-size: 28px;
+	color: #5b5f62;
+}
+
+.howItWorks p, .noads p {
+	font-size: 13px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+
+.noads h2 {
+	font-size: 24px;
+	color: #40a9d8;
+}
+
+.noads a,
+.helpBox a,
+.shareBox a,
+.speakBox a,
+.atWhatsApp a,
+.dropDownMenu a:hover {
+	color: #40a9d8;
+}
+
+.noads a:hover,
+.helpBox a:hover,
+.shareBox a:hover,
+.speakBox a:hover,
+.atWhatsApp a:hover,
+.whatsAppService a:hover,
+.getInTouch a:hover,
+.footerDownload a:hover,
+.dropDownMenu a:hover {
+	text-decoration: underline;
+}
+
+.youSystem {
+	margin-bottom: 20px;
+	width: 280px;
+	height: 100px;
+}
+
+.youSystem h3,
+.helpTranslate h3,
+.shareApp h3 {
+	margin-bottom: 10px;
+	color: #64d448;
+	text-transform: uppercase;
+}
+
+.youSystem li {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+.youSystem a {
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+
+.youSystem a:hover {
+	opacity: 0.7;
+	_filter: alpha(opacity=70);
+}
+
+.andorid-icon a {
+	background-position: -3px -43px;
+}
+
+.ios-icon a {
+	background-position: -47px -43px;
+}
+
+.bb-icon a {
+	background-position: -3px 0;
+}
+
+.symbian-icon a {
+	background-position: -3px -86px;
+}
+
+.windowsPhone-icon a {
+	background-position: -47px 0;
+}
+
+.helpTranslate {
+	margin-bottom: 40px;
+	width: 280px;
+	height: 128px;
+}
+
+.helpBox,
+.speakBox {
+	padding: 10px 40px;
+	width: 200px;
+	height: 80px;
+	line-height: 21px;
+	background-color: #f1f1f1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.shareApp {
+	margin-bottom: 30px;
+	width: 200px;
+	height: 120px;
+}
+
+.shareBox li {
+	padding-bottom: 10px;
+}
+
+.shareBox a {
+	vertical-align: top;
+}
+
+.shareBox i {
+	display: inline-block;
+	margin-right: 5px;
+	width: 20px;
+	height: 20px;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+.weibo-icon i {
+	background-position: -1px -2px;
+}
+
+.weibo-icon:hover i {
+	background-position: -28px -2px;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.qqZone-icon i {
+	background-position: -2px -24px;
+}
+
+.qqZone-icon:hover i {
+	background-position: -28px -23px;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.weixin-icon i {
+	background-position: -4px -51px;
+}
+
+.weixin-icon:hover i {
+	background-position: -28px -51px;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+.twitterSpeak {
+	position: relative;
+	width: 280px;
+	height: 155px;
+}
+
+.speakBox {
+	position: relative;
+	height: 105px;
+}
+
+.speakBox i {
+	position: absolute;
+	bottom: -20px;
+	right: 25px;
+	width: 0;
+	height: 0;
+	border: 10px solid #fff;;
+	border-top: 10px solid #f1f1f1;;
+}
+
+.atWhatsApp {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #888;
+}
+
+.footerWrap {
+	padding-top: 50px;
+	width: 970px;
+	height: 300px;
+}
+
+.aboutWhatsApp {
+	float: left;
+	margin-left: 40px;
+	width: 300px;
+	height: 260px;
+}
+
+.aboutWhatsApp h4,
+.whatsAppService h4,
+.getInTouch h4,
+.footerDownload h4 {
+	padding-bottom: 20px;
+	font-size: 18px;
+	color: #8ecbc9;
+	-webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	-moz-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	-o-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.aboutWhatsApp p {
+	color: #9c9fa1;
+	line-height: 25px;
+}
+
+.copyRight {
+	padding-top: 50px;
+}
+
+.whatsAppService,
+.getInTouch,
+.footerDownload {
+	float: left;
+	margin-left: 80px;
+	width: 120px;
+	height: 260px;
+}
+
+.whatsAppService li,
+.getInTouch li,
+.footerDownload li {
+	padding-bottom: 5px;
+	text-transform: capitalize;
+	-webkit-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	-moz-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	-o-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.whatsAppService a:link,
+.whatsAppService a:visited,
+.getInTouch a:link,
+.getInTouch a:visited,
+.footerDownload a:link,
+.footerDownload a:visited {
+	color: #dee5ed;
+}
+
+.updateBrowser {
+	padding: 20px;
+	width: 100%;
+	background-color: #eef;
+}

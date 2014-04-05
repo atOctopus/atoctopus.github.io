@@ -3,7 +3,7 @@ layout: post
 title: "【学习笔记】高性能网站建设指南"
 date: 2014-03-19 00:21:33 -0700
 comments: true
-categories: 
+categories: 性能优化
 ---
 ## 规则一：减少HTTP请求
 1.  使用图片地图
@@ -21,7 +21,7 @@ categories:
 <br />
 
 ## 规则四：压缩组件
-1.  通过gzip编码压缩响应包
+1.  通过gzip编码压缩响应包（Apache服务器可以使用mod_gzip或mod_deflate模块）
 2.  删除换行、回车、注释、Tab、空格
 <br />
 
@@ -30,7 +30,7 @@ categories:
     *  在新窗口打开时
     *  重新家在时
     *  作为首页
-    *  使用了@import规则导入的样式表    
+    *  使用了@import规则导入的样式表
 2.  样式表位于底部还会造成无样式内容闪烁（FOUC），页面首页会加载文字和图片，然后加载样式表，导致样式重新渲染。
 <br />
 
