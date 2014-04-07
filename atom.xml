@@ -4,7 +4,7 @@
   <title><![CDATA[前端笔墨砚]]></title>
   <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-04-04T20:33:32-07:00</updated>
+  <updated>2014-04-07T01:13:59-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Lin]]></name>
@@ -224,7 +224,7 @@
 <h3>1.三个div并排，左右div为固宽200px，中间自适应。</h3>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" />
-两中方法实现：浮动和定位</p>
+两种方法实现：浮动和定位</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
