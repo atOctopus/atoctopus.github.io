@@ -1,0 +1,945 @@
+body,div,span,a,form,ul,li,
+h1,h2,h3,h4,h5,h6,p,dl,dt,dd,input{
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+fieldset,a img{
+	border: 0;
+}
+
+ol,ul{
+	list-style: none;
+}
+
+/* End Reset */
+
+.header{
+	width: 100%;
+}
+
+.topnav{
+	width: 100%;
+	height: 28px;
+	border-bottom: 1px solid #e3e3e3;
+	background: url("../images/qqbg.png");
+	position: fixed;
+	z-index: 1;
+}
+
+.minitop{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+/* End of topnav */
+
+.minitopleft{
+	float: left;
+	width: 380px;
+}
+
+.minitopleft a:link, .minitopleft a:visited{
+	color: #666666;
+}
+
+.minitopleft .mininav .mobileico{
+	padding-left: 12px;
+	background-image: url("../images/icobg.png");
+}
+
+.mobileico:hover{
+	background-image: url("../images/icobg.png");
+	background-position: left -30px;
+}
+
+.mininav{
+	margin-top: 8px;
+	float: left;
+	font-size: 12px;
+}
+
+.mininavhelp{
+	float: left;
+	width: 50px;
+	height: 21px;
+	font-size: 12px;
+	padding: 8px 0 0 10px;
+}
+
+.mininav a{
+	margin: 5px;
+}
+
+.mininavhelp a{
+ 	padding-right: 15px;
+ 	background-image: url("../images/icobg.png");
+	background-position: -164px -115px
+}
+
+/* End of minitopleft */
+
+.minitopright{
+	float: right;
+	width: 200px;
+}
+
+.onekey{
+	display: block;
+	float: left;
+	width: 70px;
+	height: 28px;
+	background-image: url("../images/topnavright.png");
+}
+
+.weibo, .qzone, .email, .take{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 28px;
+	background-image: url("../images/topnavright.png");
+}
+
+.onekey:hover, .weibo:hover, .qzone:hover, .email:hover, .take:hover{
+	background-image: url("../images/topnavright.png");
+}
+
+.onekey{
+	background-position: left -450px;
+}
+
+.onekey:hover{
+	background-position: left -500px;
+}
+.weibo{
+	background-position: left -50px;
+}
+
+.weibo:hover{
+	background-position: -70px -50px;
+}
+
+.qzone{
+	background-position: left -100px;
+}
+
+.qzone:hover{
+	background-position: -70px -100px;
+}
+
+.email{
+	background-position: left -150px;
+}
+
+.email:hover{
+	background-position: -70px -150px;
+}
+
+.take{
+	background-position: left -550px;
+}
+
+.take:hover{
+	background-position: -68px -550px;
+}
+
+/* End of minitopright */
+
+/* End Topnav */
+
+.soso{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 30px 0 15px;
+	height: 70px;
+}
+
+.tencentlogo{
+	float: left;
+	margin-left: 176px;
+}
+
+.tencentlogo h1 a{
+	background-image: url("../images/tencentlogo.png");
+	display: block;
+	width: 134px;
+	height: 44px;
+	margin-top: 20px;
+}
+
+.undis{
+	display: none;
+}
+
+/* End of tencentlogo */
+
+.search{
+	float: left;
+	width: 500px;
+	height: 34px;
+	padding: 25px 0 0px 30px;
+}
+
+#searchtxt{
+	float: left;
+	width: 400px;
+	height: 30px;
+	position: relative;
+	border-color: #d3d3d3;
+	border-style: solid none solid solid;
+	border-width: 2px 0 2px 2px;
+}
+
+#searchtxt:hover{
+	border-color: #3297d8;
+}
+
+.searchmenu{
+	float: left;
+	width: 70px;
+	height: 30px;
+}
+
+.searchselected{
+	width: 55px;
+	height: 25px;
+	padding: 5px 0 0 12px;
+	border: 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #a8a8a8;
+	background-image: url("../images/qqbg.png");
+	background-position: -878px -201px;
+}
+
+.searchtab{
+	float: left;
+	width: 55px;
+	border: 2px solid #3297d8;
+	left: -2px;
+	position: absolute;
+	background-color: #ffffff;
+	display: none;
+}
+
+.searchtab ul li{
+	display: inline-block;
+	width: 43px;
+	padding: 8px 0 8px 12px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #a8a8a8;
+}
+
+.searchtab ul li:hover{
+	background-color: #edf3fc;
+}
+
+#searchtxt input{
+	float: left;
+	width: 210px;
+	height: 28px;
+	border: 0;
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+#searchtxt a{
+	float: right;
+	padding: 7px;
+}
+
+.searchbtn{
+	float: left;
+	width: 86px;
+	height: 34px;
+}
+
+.searchbtn button{
+	float: left;
+	width: 86px;
+	height: 34px;
+	border: 0;
+	background-image: url("../images/qqbg.png");
+	background-position: -350px -110px;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+/* End of search */
+
+/* End SoSo */
+
+.mainnav{
+	margin: 0 auto;
+	width: 1000px;
+	height: 60px;
+	background-image: url("../images/qqbg.png");
+	background-position: 0 -35px;
+}
+
+.mainnavinner{
+	float: left;
+	margin-top: 5px;
+	width: 1000px;
+	height: 48px;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.mainnavinner div{
+	float: left;
+	width: 145px;
+	padding: 0 9px 0 7px;
+	margin-left: 9px;
+}
+
+.mainnavinner .mainnavbook, .mainnavinner .mainnavpublic{
+	width: 110px;
+}
+
+.mainnavinner div a{
+	float: left;
+	width: 36px;
+	display: block;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.mainnavinner a:link, .mainnavinner a:visited{
+	color: #ffffff;
+}
+
+.mainnavinner a:hover{
+	color: #0d5188;
+	background-color: #cae1ee;
+}
+
+/* End mainnav */
+
+.banner{
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 1000px;
+	overflow: hidden;
+}
+
+.bannerleft{
+	float: left;
+	width: 680px;
+	height: 74px;
+}
+
+.bannerright{
+	float: left;
+	width: 320px;
+	height: 75px;
+}
+
+/* End header */
+
+.main{
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 1000px;
+}
+
+.section{
+	float: left;
+	width: 660px;
+	height: 200px;
+	position: relative;
+	border-top: 1px solid #bdd7f2;
+}
+
+.section h2 a:link, .section h2 a:visited{
+	font-size: 14px;
+	font-weight: normal;
+	color: #458fce;
+}
+
+.section h2 a:hover{
+	font-weight: bold;
+}
+
+.news{
+	float: left;
+	width: 330px;
+	height: 610px;
+}
+
+.newstitle{
+	width: 330px;
+	height: 32px;
+	background-image: url("../images/qqbg.png");
+	background-position: 0 -161px;
+}
+
+.newstitle h2{
+	float: left;
+	width: 90px;
+	height: 31px;
+	text-align: center;
+	border-right: 1px solid #bdd7f2;
+}
+
+.sky{
+	float: right;
+	font-size: 12px;
+	width: 120px;
+	height: 32px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.newsone, .newstwo, .newsthree, .todaytalk{
+	margin: 0 0 10px 15px;
+	float: left;
+	width: 330px;
+}
+
+.newsone a:hover, .newstwo a:hover, .newsthree a:hover,
+ .todaytalk a:hover, .heatcontent a:hover, .heatlist a:hover{
+	text-decoration: underline;
+	color: #cd0200;
+}
+
+.newsone ul, .newstwo ul, .newsthree ul, .todaytalk ul,
+ .heatlist ul, .fincon ul li, .phycon ul li{
+	float: left;
+	font-size: 14px;
+}
+
+.newsone ul li, .newstwo ul li, .newsthree ul li,
+ .todaytalk ul li, .fincon ul li, .phycon ul li{
+	padding: 5px 0;
+	list-style-image: url(../images/list_style.png);
+}
+
+.newstop a, .newstop a:hover, .todaytop a, .todaytop a:hover,
+.footballdata dt a{
+	font-weight: bold;
+	color: #3b639f;
+}
+
+.today{
+	float: left;
+	width: 330px;
+	height: 610px;
+}
+
+.todaytitle, .todayheat{
+	float: left;
+	width: 330px;
+	height: 32px;
+	background-image: url("../images/qqbg.png");
+	background-position: 0 -210px;
+}
+
+.today h2{
+	float: left;
+	width: 90px;
+	height: 31px;
+	text-align: center;
+}
+
+.todaytalk{
+	margin-top: 6px;
+}
+
+.todaytop{
+	display: inline-block;
+	width: 330px;
+	text-align: center;
+}
+
+.todayheat{
+	border-top: 1px solid #bdd7f2;
+}
+
+.todayheat h2{
+	border-right: 1px solid #bdd7f2;
+}
+
+.heatcontent, .heatlist{
+	float: left;
+	width: 330px;
+	height: 117px;
+}
+
+.heatcontent .videoone, .heatcontent .videotwo{
+	float: left;
+	width: 130px;
+	font-size: 12px;
+	margin: 10px 25px 0 10px;
+	text-align: center;
+}
+
+.heatlist{
+	margin: 20px 0 0 30px;
+}
+
+.heatlist ul li{
+	padding: 5px 0;
+	list-style-image: url(../images/video_list.png);
+}
+
+/* End news */
+
+.finandstock, .phyculture{
+	float: left;
+	width: 660px;
+	height: 280px;
+	border-top: 2px solid #458FCE;
+}
+
+.leftfin, .rightstock, .phyleft, .phyright{
+	float: left;
+	width: 330px;
+	height: 249px;
+}
+
+.fintitle, .stocktitle, .phytitle, .footballtitle{
+	float: left;
+	width: 330px;
+	height: 28px;
+	line-height: 25px;
+	background-color: #FBFBFB;
+	border-bottom: 1px solid #DBECEC;
+}
+
+.stocktitle{
+	line-height: 29px;
+}
+
+.fincon, .phycon{
+	float: left;
+	width: 315px;
+	height: 210px;
+	margin: 10px 0 0 15px;
+}
+
+.fn{
+	font-weight: normal;
+	font-size: 14px;
+	color: #458FCE;
+}
+
+.fintitle h2 a:link, .phytitle h2 a:link{
+	font-weight: bold;
+}
+
+.stocktitle a{
+	float: right;
+	font-size: 12px;
+	color: #458FCE;
+	margin-right: 8px;
+}
+
+.stocktitle a:hover, .fintitle a:hover, .phytitle a:hover{
+	text-decoration: underline;
+}
+
+.stockinput{
+	height: 20px;
+	border-style: solid none solid solid;
+	border-width: 1px;
+	color: #666666;
+}
+
+.stockbt{
+	float: right;
+	width: 36px;
+	height: 21px;
+	margin-top: 4px;
+	border: 0 none;
+	background-image: url("../images/qqbg.png");
+	background-position: -600px -160px;
+	cursor: pointer;
+}
+
+.stocktitle form{
+	float: right;
+}
+
+.stockcon, .footballcon{
+	float: left;
+	width: 322px;
+	height: 210px;
+	margin: 12px 0 0 8px;
+}
+
+.fincon a:hover, .phycon a:hover{
+	color: #CD0200;
+	text-decoration: underline;
+}
+
+.stocktab{
+	float: left;
+	width: 322px;
+	height: 25px;
+}
+
+.stocktab ul li{
+	width: 45px;
+	height: 15px;
+	display: inline-block;
+	font-size: 12px;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.stocktab ul li:hover{
+	color: #FFFFFF;
+	background-color: #458FCE;
+}
+
+.stockimg{
+	float: left;
+	width: 168px;
+	height: 68px;
+	border: 1px solid #DBECEC;
+	margin-top: 5px;
+}
+
+.stockdata{
+	float: left;
+	width: 142px;
+	height: 70px;
+	margin: 8px 0 0 10px;
+}
+
+.stockdata dl dt, .footballdata dl dd{
+	font-size: 12px;
+}
+
+.stockdata .stocknumber{
+	font-size: 28px;
+	color: #CC0000;
+	font-weight: bold;
+}
+
+.stockdata .stockadd{
+	font-size: 14px;
+	color: #CC0000;
+}
+
+.stocklist, .footballlist{
+	float: left;
+	width: 322px;
+	height: 80px;
+	font-size: 14px;
+}
+
+.stocklist ul li, .footballlist ul li{
+	padding-top: 10px;
+}
+
+.stocklist a:hover, .footballlist a:hover{
+	color: #CD0200;
+	text-decoration: underline;
+}
+
+.stocklogin{
+	float: left;
+	width: 322px;
+	height: 25px;
+	font-size: 14px;
+	padding-top: 9px;
+}
+
+.stocklogin a:link, .stocklogin a:visited{
+	color: #3B639F;
+}
+
+.stocklogin a:hover{
+	text-decoration: underline;
+}
+
+.footballimg, .footballimg img{
+	float: left;
+	width: 130px;
+	height: 75px;
+}
+
+.footballdata{
+	float: left;
+	width: 182px;
+	height: 67px;
+	margin: 8px 0 0 10px;
+}
+
+.footballdata dl dt:hover{
+	color: #3B639F;
+	text-decoration: underline;
+}
+
+.footballdata dd{
+	line-height: 22px;
+	color: #666666;
+}
+
+.footballdata dd a:hover{
+	color: #cc0000;
+	text-decoration: underline;
+}
+
+.detailed{
+	color: #3b639f;
+}
+
+/* End fin and stock */
+
+/* End section */
+
+.aside{
+	float: right;
+	width: 320px;
+	height: 1300px;
+	margin-left: 20px;
+	position: relative;
+}
+
+.rightproduct{
+	float: left;
+	width: 318px;
+	height: 200px;
+	border: 1px solid #bdd7f2;
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+.productone, .producttwo, .productthree, .productfive{
+	width: 308px;
+	padding: 10px 0 10px 10px;
+}
+
+.productfour{
+	width: 308px;
+	line-height: 25px;
+	padding: 5px 0 5px 10px; 
+}
+
+.producttwo, .productfour{
+	background-color: #f5f8fc;
+}
+
+.rightproduct a{
+	padding-right: 8px;
+}
+
+/* End qqProduct */
+
+.bannercar{
+	float: left;
+	width: 320px;
+	margin-top: 10px;
+}
+
+.alllook{
+	float: left;
+	width: 319px;
+	border-style: solid solid solid none;
+	border-color: #BDD7F2;
+	border-width: 1px;
+	position: relative;
+}
+
+.alllooktitle{
+	width: 319px;
+	height: 40px;
+	background-image: url("../images/qqbg.png");
+	background-position: left -110px;
+}
+
+.alllooktitle h2 a{
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	overflow: hidden;
+	text-indent: -999px;
+	margin-left: 10px;
+}
+
+.alllooktitle .renovate, .alllooktitle .square{
+	float: left;
+	width: 15px;
+	height: 15px;
+	background-image: url("../images/qqbg.png");
+}
+
+.alllooktitle .renovate{
+	background-position: 0 -260px;
+	margin: 11px 0 0 264px;
+}
+
+.alllooktitle .renovate:hover{
+	background-image: url("../images/qqbg.png");
+	background-position: -30px -260px;
+}
+
+.alllooktitle .square{
+	background-position: -60px -260px;
+	margin: 10px 0 0 14px;
+}
+
+.alllooktitle .square:hover{
+	background-image: url("../images/qqbg.png");
+	background-position: -90px -260px;
+}
+
+.alllookcon{
+	float: left;
+	width: 318px;
+}
+
+.alllook .alllookline{
+	width: 1px;
+	height: 390px;
+	background-image: url("../images/qqbg.png");
+	background-position: right -35px;
+	position: absolute;
+}
+
+.alllook .alllookgreen{
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	background-image: url("../images/qqbg.png");
+	background-position: -800px -210px;
+	left: -3px;
+	top: 45px;
+}
+
+.alllooktime{
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	width: 65px;
+	height: 20px;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-image: url("../images/qqbg.png");
+	background-position: -800px -110px;
+}
+
+.lookone{
+	float: left;
+	width: 319px;
+	font-size: 14px;
+}
+
+.lookone dl{
+	float: left;
+	padding: 6px;
+	width: 307px;
+}
+
+.lookone dl:hover{
+	background-color: #f5f8fc;
+}
+
+.lookone dt a:hover{
+	color: #cd0200;
+	text-decoration: underline;
+}
+
+.lookimage{
+	float: left;
+	width: 90px;
+	height: 60px;
+	margin-top: 5px;
+}
+
+.lookcontent{
+	float: left;
+	font-size: 12px;
+	width: 180px;
+	margin: 5px 18px 0 10px;
+	line-height: 20px;
+}
+
+.lookcontent a, .sharecount a{
+	color: #666666;
+}
+
+.lookcontent a:hover{
+	text-decoration: underline;
+}
+
+.countshare{
+	float: left;
+	width: 288px;
+	font-size: 12px;
+	color: #666666;
+	margin-top: 5px;
+}
+
+.sharecount{
+	float: left;
+	width: 120px;
+}
+
+.share{
+	float: right;
+}
+
+.footer{
+	float: left;
+	width: 1000px;
+}
+
+.footercopy{
+	width: 910px;
+	height: 100px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 12px;
+	color: #515151;
+}
+
+.footercopy a{
+	color: #515151;
+}
+
+.footercopy a:hover{
+	color: #cd0200;
+	text-decoration: underline;
+}
+
+.footersafe{
+	margin: 0 auto;
+	width: 920px;
+	height: 65px;
+}
+
+.footersafe p{
+	width: 122px;
+	height: 50px;
+	border: 1px solid #e3e3e3;
+	font-size: 12px;
+	display: inline-block;
+}
+
+.footersafe p span{
+	width: 60px;
+	height: 40px;
+	float: left;
+	text-align: center;
+}
+
+.footersafe .hr{
+	text-align: center;
+	padding-top: 10px;
+}
+
+/* End alllook */
+/* End aside */
+/* End main */
