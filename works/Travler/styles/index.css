@@ -59,13 +59,14 @@ header */
 }
 
 #search input {
+  padding: 16px 0;
   width: 299px;
-  height: 46px;
-  line-height: 46px;
-  border: 0 none;
+  height: 14px;
+  border: 1px solid #c9c9c9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   background: #fff;
   text-indent: 2em;
-  box-shadow: 0 0 1px #dedede;
 }
 
 #search button {

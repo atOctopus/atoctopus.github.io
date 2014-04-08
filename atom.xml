@@ -4,7 +4,7 @@
   <title><![CDATA[前端笔墨砚]]></title>
   <link href="http://www.atoctopus.com/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-04-07T06:24:45-07:00</updated>
+  <updated>2014-04-08T00:58:11-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Lin]]></name>
@@ -334,9 +334,9 @@
 <br />
 
 
-<h3>2.CSS的选择器优先级</h3>
+<h3>2.CSS的优先级</h3>
 
-<p><code>!important &gt; 内联 &gt; id &gt; class &gt; tag &gt; *</code></p>
+<p><code>!important &gt; 行内 &gt; 内联 &gt; 外联 &gt; id &gt; class &gt; tag &gt; * &gt; 继承</code></p>
 
 <br />
 
