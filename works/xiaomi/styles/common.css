@@ -73,8 +73,8 @@
 .goods-list li,
 .hotgoods-right li {
 	float: left;
-	*display: inline;
 	margin: 10px 10px 0 0;
+    *display: inline;
 }
 
 .goods-list a,
