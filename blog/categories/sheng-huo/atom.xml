@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 生活 | 前端笔墨砚]]></title>
   <link href="http://www.atoctopus.com/blog/categories/sheng-huo/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-04-15T18:12:28-07:00</updated>
+  <updated>2014-04-15T20:28:09-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Lin]]></name>
@@ -32,8 +32,15 @@
 
 
 <p>```python
-<form method="post" active="#">
-  <table cellspacing="0" cellpadding="5" border="1" summary="一个员工意见提交表"></p>
+&lt;!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>意见提交表</title>
+</head>
+<body>
+  <form method="post" active="#">
+  <table summary="某公司员工意见提交表"></p>
 
 <pre><code>&lt;caption&gt;意见提交表&lt;/caption&gt;
 &lt;tr&gt;
@@ -45,21 +52,16 @@
 &lt;tr&gt;
   &lt;th scope="row"&gt;性别&lt;/th&gt;
   &lt;td&gt;
-    &lt;input id="male" type="radio" value="male" name="sex" checked="checked"&gt;
-    &lt;label for="male"&gt;男&lt;/label&gt;
-    &lt;input id="female" type="radio" value="female" name="sex"&gt;
-    &lt;label for="female"&gt;女&lt;/label&gt;
+    &lt;label&gt;&lt;input id="male" type="radio" value="male" name="sex" checked="checked"&gt;男&lt;/label&gt;
+    &lt;label&gt;&lt;input id="female" type="radio" value="female" name="sex"&gt;女&lt;/label&gt;
   &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
   &lt;th scope="row"&gt;类型&lt;/th&gt;
   &lt;td&gt;
-    &lt;input id="checkbox1" type="checkbox" value="checkbox1" name="checkboxAll" checked="checked"&gt;
-    &lt;label for="checkbox1"&gt;类型一&lt;/label&gt;
-    &lt;input id="checkbox2" type="checkbox" value="checkbox2" name="checkboxAll"&gt;
-    &lt;label for="checkbox2"&gt;类型二&lt;/label&gt;
-    &lt;input id="checkbox3" type="checkbox" value="checkbox3" name="checkboxAll"&gt;
-    &lt;label for="checkbox3"&gt;类型三&lt;/label&gt;
+    &lt;label&gt;&lt;input id="checkbox1" type="checkbox" value="checkbox1" name="checkboxAll" checked="checked"&gt;类型一&lt;/label&gt;
+    &lt;label&gt;&lt;input id="checkbox2" type="checkbox" value="checkbox2" name="checkboxAll"&gt;类型二&lt;/label&gt;
+    &lt;label&gt;&lt;input id="checkbox3" type="checkbox" value="checkbox3" name="checkboxAll"&gt;类型三&lt;/label&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
   &lt;th scope="row"&gt;部门&lt;/th&gt;
@@ -80,7 +82,7 @@
 &lt;tr&gt;
   &lt;th scope="row"&gt;内容&lt;/th&gt;
   &lt;td&gt;
-    &lt;textarea rows="5" cols="22"&gt;&lt;/textarea&gt;
+    &lt;textarea rows="8" cols="30"&gt;&lt;/textarea&gt;
   &lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -93,9 +95,11 @@
 
 <p>  </table>
 </form>
+</body>
+</html>
 ```</p>
 
-<p>在线预览：<a href="http://codepen.io/anon/pen/JnHwC/">点击这里</a></p>
+<p>在线预览：<a href="http://jsbin.com/hovuvohe/1/edit">点击这里</a></p>
 
 <br />
 
@@ -104,37 +108,44 @@
 
 <p><img src="http://www.atoctopus.com/images/post/interview/html02.png" alt="HTML第二题" /></p>
 
-<p>```python</p>
+<p>```python
+&lt;!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>意见提交表</title>
+</head>
+<body>
+  <table cellspacing="0" cellpadding="10" border="1"></p>
 
-<table cellspacing="0" cellpadding="10" border="1">
-  <tr>
-    <th colspan="4" scope="col">联系方式</th>
-  </tr>
-  <tr>
-    <th rowspan="2" scope="row">test</th>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
-  </tr>
-  <tr>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
-  </tr>
-  <tr>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
-    <td>test</td>
-  <tr>
-    <th colspan="3" scope="row">test</th>
-    <td>test</ted>
-  </tr>
-</table>
+<pre><code>&lt;caption&gt;联系方式&lt;/caption&gt;
+&lt;tr&gt;
+  &lt;th rowspan="2" scope="row"&gt;test&lt;/th&gt;
+  &lt;td&gt;test&lt;/td&gt;
+  &lt;td&gt;test&lt;/td&gt;
+  &lt;td&gt;test&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;test&lt;/td&gt;
+  &lt;td&gt;test&lt;/td&gt;
+  &lt;td&gt;test&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;test&lt;/td&gt;
+  &lt;td&gt;test&lt;/td&gt;
+  &lt;td&gt;test&lt;/td&gt;
+  &lt;td&gt;test&lt;/td&gt;
+&lt;tr&gt;
+  &lt;th colspan="3" scope="row"&gt;test&lt;/th&gt;
+  &lt;td&gt;test&lt;/ted&gt;
+&lt;/tr&gt;
+</code></pre>
 
-
-<p>```
-在线预览：<a href="http://codepen.io/anon/pen/ClmyB/">点击这里</a></p>
+<p></table>
+</body>
+</html>
+```
+在线预览：<a href="http://jsbin.com/vedapuxo/1/edit">点击这里</a></p>
 
 <br />
 
@@ -295,17 +306,50 @@ z-index: -1;
 
 <h3>5.清除浮动的方法</h3>
 
-<p>一般需要使用到浮动清除有两种情况：子元素浮动和上级元素浮动</p>
+<p>一般需要使用到浮动清除有两种情况：闭合浮动和清除浮动</p>
 
 
 
 
-<p>清除子元素浮动</p>
+<p>为什么要闭合浮动？</p>
+
+
+<p>因为子元素浮动使自身脱离普通流，造成父素高度坍陷。</p>
 
 
 <p>```python
-/<em> clearfix方法 </em>/
-/<em> 精简版 </em>/
+// 方法一：clearfix
+// 经典版
+.clearfix:after {
+  content: &ldquo;.&rdquo;;
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {</p>
+
+<pre><code>*zoom: 1;
+</code></pre>
+
+<p>}
+// 精简版
+.clearfix:after {</p>
+
+<pre><code>content: "\200B";
+display: block;
+height: 0;
+clear: both;
+</code></pre>
+
+<p>}
+.clearfix {</p>
+
+<pre><code>*zoom: 1;
+</code></pre>
+
+<p>}
+// 精简版
 .clearfix:before, .clearfix:after {
   content: &ldquo;&rdquo;;
   display: table;
@@ -318,53 +362,32 @@ z-index: -1;
   zoom: 1;
 }</p>
 
-<p>/<em> 经典版 </em>/
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  content: &ldquo;&rdquo;;
-  clear: both;
-  height: 0;
-}
-// IE6
-* html .clearfix {
-  zoom: 1;
-}
-// IE7
-*:first-child+html .clearfix {
-  zoom: 1;
-}</p>
+<p>// 方法二：overflow
+overflow: hidden | auto;</p>
 
-<p>/<em> overflow方法 </em>/
-/<em> 方法一 </em>/
-.test1 {
-  overflow: auto;
-  zoom: 1;
-}</p>
+<p>// 方法三：额外标签 或 空标签</p>
 
-<p>/<em> 方法二 </em>/
-.test2 {
-  overflow: hidden;
-  zoom: 1;
-}</p>
-
-<p>/<em> 空标签方法 </em>/</p>
-
-<br style="clear: both;">  // 插入到浮动元素最后，不推荐！添加了不必要的代码
+<div style="clear: both"></div>
 
 
-<p>/<em> 父元素浮动方法 </em>/
-// 但这带来的影响是下个元素会受这个元素影响，导致页面需要大量的浮动</p>
+<p> 或 <br clear="all"></p>
 
-<p>/<em> inline-block方法 </em>/
-// 给父元素添加<code>display: inline-block</code>来清除浮动
+<p>// 方法四：父元素浮动
+父元素添加float: left | right;</p>
+
+<p>// 方法五：display
+父元素添加display: table | inline-block;
 ```</p>
 
-<p>清除上级元素浮动</p>
+<p>为什么要清除浮动？</p>
 
 
-<p><code>
-使用float 或者 clear
+<p>元素浮动会影响周围元素的位置</p>
+
+
+<p><code>python
+float: left | right;
+clear: left | right | both;
 </code></p>
 
 <br />
@@ -373,9 +396,9 @@ z-index: -1;
 <h3>6.px、em和百分比之间的区别</h3>
 
 <ul>
-<li>px是绝对度量单位，相对于显示器分辨率</li>
-<li>em是相对度量单位，相对于文本字号。例如浏览器默认字体16px，那么1em等于16px，14px等于0.875em</li>
-<li>百分比也是相对度量单位是相对于主体</li>
+<li>px相对于特定设备的屏幕分辨率</li>
+<li>em相对于父元素的字体大小。例如浏览器默认字体16px，那么1em等于16px，14px等于0.875em</li>
+<li>字体将在容器元素（或者父元素）字体大小的基础上发生变化。例如：设为一个值为120%，将会使当前元素中的字体在其上层元素字体大小的基础上增加20%</li>
 </ul>
 
 
@@ -623,7 +646,7 @@ alert(obj.a.b); // 10
 <p>优化方法：</p>
 
 <p>页面级：
-出门右转《高性能网站建设指南》</p>
+出门右转<a href="/blog/2014/03/19/wangzhanyouhua/">《高性能网站建设指南》</a></p>
 
 <p>代码级：
 1.  避免全局变量
