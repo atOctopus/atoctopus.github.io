@@ -1,0 +1,80 @@
+/* 图片
+-------------------------------------------- */
+.common-icon {
+  background: url(../images/pic/common-icon.png) no-repeat;
+}
+
+.content-list dt a:hover,
+.recom-content a:hover{
+  text-decoration: underline;
+}
+
+/* 内容区列表
+-------------------------------------------- */
+
+.content-title {
+  margin-bottom: 10px;
+}
+
+.content-title h2 {
+  padding-left: 20px;
+  width: 360px;
+  height: 54px;
+  line-height: 51px;
+  color: #fbdea6;
+  background-position: -163px 0;
+  font-family: "宋体";
+  font-size: 25px;
+}
+
+.content-list dd {
+  margin-bottom: 10px;
+}
+
+.content-list dt a {
+  color: #791111;
+  font-size: 14px;
+}
+
+.content-list dt,
+.content-list dd {
+  padding-left: 20px;
+}
+
+.content-list .content-list1 {
+  background-position: -982px -156px;
+}
+
+.content-list .content-list2 {
+  background-position: -982px -182px;
+} 
+
+.content-list .content-list3 {
+  background-position: -982px -207px;
+}
+
+.content-list .content-list4 {
+  background-position: -982px -233px;
+}
+
+.content-list .content-list5 {
+  background-position: -982px -257px;
+}
+
+/* 按钮
+-------------------------------------------- */
+
+.content-btn {
+  height: 48px;
+}
+
+.content-btn a {
+  display: block;
+  width: 159px;
+  height: 48px;
+  line-height: 45px;
+  color: #fbdea6;
+  background-position: -709px 0;
+  font-size: 18px;
+  text-align: center;
+}

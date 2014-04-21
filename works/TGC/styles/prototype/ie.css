@@ -1,0 +1,31 @@
+*html{
+  background-image:url(about:blank);
+  background-attachment:fixed;
+}
+
+body {
+  _text-align: center;
+}
+
+#header,
+#content {
+  _text-align: left;
+}
+
+#top-bar a {
+  _height: 35px;
+}
+
+.footer-copyright ul li {
+  *display: inline;
+  *zoom: 1;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+#returnTop {
+  _position: absolute;
+  _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 30)||0)-(parseInt(this.currentStyle.marginBottom, 30)||0)));
+}
