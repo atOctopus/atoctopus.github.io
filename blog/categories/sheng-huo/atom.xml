@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 生活 | 前端笔墨砚]]></title>
   <link href="http://www.atoctopus.com/blog/categories/sheng-huo/atom.xml" rel="self"/>
   <link href="http://www.atoctopus.com/"/>
-  <updated>2014-04-20T20:12:07-07:00</updated>
+  <updated>2014-04-23T08:48:47-07:00</updated>
   <id>http://www.atoctopus.com/</id>
   <author>
     <name><![CDATA[Lin]]></name>
@@ -18,20 +18,20 @@
     <link href="http://www.atoctopus.com/blog/2014/03/19/interview/"/>
     <updated>2014-03-19T00:57:38-07:00</updated>
     <id>http://www.atoctopus.com/blog/2014/03/19/interview</id>
-    <content type="html"><![CDATA[<p>最近应聘了一家电子商务B2B公司，简单面试后是2小时笔试。下面列出面试题及答案，供大家参考学习。</p>
+    <content type="html"><![CDATA[<p>最近应聘了一家电子商务B2B公司，简单面试后是2小时笔试，下面列出面试题及答案，供大家参考学习，答案将不间断完善。</p>
 
 <hr />
 
 <h2>HTML部分</h2>
 
-<h3>1.使用HTML完成以下表格</h3>
+<p><strong> 1.使用HTML完成以下表格 </strong></p>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/html01.png" alt="HTML第一题" /></p>
 
 <!--more-->
 
 
-<p>```python
+<p>``` html
 &lt;!DOCTYPE html>
 <html>
 <head>
@@ -94,21 +94,33 @@
 </code></pre>
 
 <p>  </table>
-</form>
+  </form>
 </body>
 </html>
-```</p>
+```
+<strong> PS： </strong></p>
+
+<blockquote><ul>
+<li><code>&lt;caption&gt;</code>标签表示表格标题</li>
+<li><code>&lt;th&gt;</code>标签表示表头信息</li>
+<li><code>&lt;td&gt;</code>标签表示数据</li>
+<li><code>&lt;table&gt;</code>标签中的summary属性，用于描述表格内容的摘要</li>
+<li><code>&lt;th&gt;</code>标签的scope属性标识为列表头或行表头</li>
+<li>隐式或显式的添加<code>&lt;label&gt;</code>标签</li>
+<li><code>&lt;textarea&gt;</code>标签添加rows属性和cols属性</li>
+</ul>
+</blockquote>
 
 <p>在线预览：<a href="http://jsbin.com/hovuvohe/1/edit">点击这里</a></p>
 
 <br />
 
 
-<h3>2.依旧是使用HTML完成以下图片</h3>
+<p><strong> 2.依旧是使用HTML完成以下图片 </strong></p>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/html02.png" alt="HTML第二题" /></p>
 
-<p>```python
+<p>``` html
 &lt;!DOCTYPE html>
 <html>
 <head>
@@ -147,6 +159,19 @@
 ```
 在线预览：<a href="http://jsbin.com/vedapuxo/1/edit">点击这里</a></p>
 
+<p><strong> 3.插入一张图片 </strong></p>
+
+<pre><code>&lt;img src="example.jpg" width="200" height="100" alt="一张演示图片"&gt;
+</code></pre>
+
+<p><strong> PS： </strong></p>
+
+<blockquote><ul>
+<li>alt属性：当图片无法显示（用户禁止，屏幕阅读器，下载失败）时以文字代替图片</li>
+<li>width和height属性：在网页加载时给图片预留空间，当图片无法显示时不会造成布局错乱</li>
+</ul>
+</blockquote>
+
 <br />
 
 
@@ -154,11 +179,11 @@
 
 <h2>CSS部分</h2>
 
-<h3>1.三个div并排，左右div为固宽200px，中间自适应。</h3>
+<p><strong> 1.三个div并排，左右div为固宽200px，中间自适应 </strong></p>
 
 <p><img src="http://www.atoctopus.com/images/post/interview/css01.png" alt="CSS第一题" />
 两种方法实现：浮动和定位
-```python</p>
+``` html</p>
 
 <div id="box">
   <div class="left">...</div>
@@ -167,7 +192,10 @@
 </div>
 
 
-<p>//方法一：浮动</p>
+<p>```</p>
+
+<p>``` css
+/<em> 方法一：浮动 </em>/</p>
 
 <h1>box {</h1>
 
@@ -189,7 +217,7 @@
   background: blue;
 }</p>
 
-<p>//方法二：定位</p>
+<p>/<em> 方法二：定位 </em>/</p>
 
 <h1>box {</h1>
 
@@ -217,21 +245,22 @@
 }
 ```</p>
 
-<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">方法一点击这里</a> <a href="http://codepen.io/anon/pen/tAleE/">方法二点击这里</a></p>
+<p>在线预览：<a href="http://codepen.io/anon/pen/geixm/">方法一</a> <a href="http://codepen.io/anon/pen/tAleE/">方法二</a></p>
 
 <br />
 
 
-<h3>2.CSS的优先级</h3>
+<p><strong> 2.CSS的优先级 </strong></p>
 
-<p><code>!important &gt; 行内 &gt; 内联 &gt; 外联 &gt; id &gt; class &gt; tag &gt; * &gt; 继承</code></p>
+<pre><code>!important &gt; 行内 &gt; 内联 &gt; 外联 &gt; id &gt; class &gt; tag &gt; * &gt; 继承
+</code></pre>
 
 <br />
 
 
-<h3>3.div高初始200px，当内容超过200px时撑开容器</h3>
+<p><strong> 3.div高初始200px，当内容超过200px时撑开容器 </strong></p>
 
-<p>```python
+<p>``` css
 .div-test {</p>
 
 <pre><code>min-height: 200px; /* 主流浏览器 */
@@ -245,24 +274,29 @@ height: 200px; /* IE浏览器 */
 <br />
 
 
-<h3>4.让div层在flash和select之上</h3>
+<p><strong> 4.让div层在Flash和select之上 </strong></p>
 
-<p>因为flash和select是以窗口形式显示，窗口形式要优于非窗口形式</p>
+<p>造成的原因是因为Flash和select是以窗口形式显示，窗口形式要优于非窗口形式</p>
 
 
-<p>```python
-/<em> 让div在flash之上 </em>/</p>
+<p>``` html</p>
+
+<!-- 将wmode属性默认值window改为"opaque"或"transparent"实现div层在Flash之上 -->
+
 
 <object>
-    /* 将wmode属性默认值window改为"opaque"或"transparent" */
     <embed src="http://www.atoctopus.com/example.swf" wmode="transparent"></embed>
 </object>
 
 
-<p>/<em> div在select之上 </em>/
-// 通过iframe覆盖select，div覆盖iframe的方式实现
-// HTML
-<select></p>
+<p>```</p>
+
+<p>``` html</p>
+
+<!-- 通过iframe覆盖select，div覆盖iframe的方式实现div层在select之上 -->
+
+
+<p><select></p>
 
 <pre><code>&lt;option&gt;1&lt;/option&gt;
 &lt;option&gt;2&lt;/option&gt;
@@ -276,7 +310,9 @@ height: 200px; /* IE浏览器 */
 </div>
 
 
-<p>// CSS
+<p>```</p>
+
+<p>``` css
 .top {</p>
 
 <pre><code>position: absolute;
@@ -304,7 +340,7 @@ z-index: -1;
 <br />
 
 
-<h3>5.清除浮动的方法</h3>
+<p><strong> 5.清除浮动的方法 </strong></p>
 
 <p>一般需要使用到浮动清除有两种情况：闭合浮动和清除浮动</p>
 
@@ -314,12 +350,14 @@ z-index: -1;
 <p>为什么要闭合浮动？</p>
 
 
+
+
 <p>因为子元素浮动使自身脱离普通流，造成父素高度坍陷。</p>
 
 
-<p>```python
-// 方法一：clearfix
-// 经典版
+<p>``` css
+/<em> 方法一：clearfix </em>/
+/<em> 经典版 </em>/
 .clearfix:after {
   content: &ldquo;.&rdquo;;
   display: block;
@@ -333,7 +371,7 @@ z-index: -1;
 </code></pre>
 
 <p>}
-// 精简版
+/<em> 精简版 </em>/
 .clearfix:after {</p>
 
 <pre><code>content: "\200B";
@@ -349,7 +387,7 @@ clear: both;
 </code></pre>
 
 <p>}
-// 精简版
+/<em> 真精简版 </em>/
 .clearfix:before, .clearfix:after {
   content: &ldquo;&rdquo;;
   display: table;
@@ -359,33 +397,35 @@ clear: both;
   overflow: hidden;
 }
 .clearfix {
-  zoom: 1;
+  *zoom: 1;
 }</p>
 
-<p>// 方法二：overflow
+<p>/<em> 方法二：overflow </em>/
 overflow: hidden | auto;</p>
 
-<p>// 方法三：额外标签 或 空标签</p>
+<p>/<em> 方法三：额外标签 或 空标签 </em>/</p>
 
 <div style="clear: both"></div>
 
 
 <p> 或 <br clear="all"></p>
 
-<p>// 方法四：父元素浮动
+<p>/<em> 方法四：父元素浮动 </em>/
 父元素添加float: left | right;</p>
 
-<p>// 方法五：display
+<p>/<em> 方法五：display </em>/
 父元素添加display: table | inline-block;
 ```</p>
 
 <p>为什么要清除浮动？</p>
 
 
+
+
 <p>元素浮动会影响周围元素的位置</p>
 
 
-<p><code>python
+<p><code>css
 float: left | right;
 clear: left | right | both;
 </code></p>
@@ -393,14 +433,14 @@ clear: left | right | both;
 <br />
 
 
-<h3>6.px、em和百分比之间的区别</h3>
+<p><strong> 6.px、em和百分比之间的区别 </strong></p>
 
-<ul>
+<blockquote><ul>
 <li>px相对于特定设备的屏幕分辨率</li>
-<li>em相对于父元素的字体大小。例如浏览器默认字体16px，那么1em等于16px，14px等于0.875em</li>
-<li>字体将在容器元素（或者父元素）字体大小的基础上发生变化。例如：设为一个值为120%，将会使当前元素中的字体在其上层元素字体大小的基础上增加20%</li>
+<li>em相对于容器元素（或者父元素）的字体大小。例如浏览器默认字体16px，那么1em等于16px，14px等于0.875em</li>
+<li>百分比字体将在容器元素（或者父元素）字体大小的基础上发生变化。例如：设为一个值为120%，将会使当前元素中的字体在其上层元素字体大小的基础上增加20%</li>
 </ul>
-
+</blockquote>
 
 <br />
 
@@ -409,34 +449,36 @@ clear: left | right | both;
 
 <h2>JavaScript jQuery部分</h2>
 
-<h3>1.写一个原型unique方法，要求将数组中重复的项去掉</h3>
+<p><strong> 1.写一个原型unique方法，要求将数组中重复的项去掉 </strong></p>
 
-<p>```python
-function Array() {}
-/<em> 方法一 </em>/
+<p>``` javascript
+function Array() {}</p>
+
+<p>// 方法一
 Array.prototype.unique1(data) {</p>
 
 <pre><code>var n = []; // 临时数组
-for(var i=0; i&lt;data.length; i++) {
-    if(n.indexOf(data[i]) == -1) { // 循环数组，通过能否获得值的下标来判断数组是否存在
+for (var i = 0; i &lt; data.length; i++) {
+    if (n.indexOf(data[i]) == -1) { // 循环数组，通过能否获得值的下标来判断数组是否存在
         n.push(data[i]);
     }
 }
 return n;
 </code></pre>
 
-<p>}
-/<em> 调用原型方法 </em>/
+<p>}</p>
+
+<p>// 调用原型方法
 var result1 = new Array();
 result1.unique1([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]</p>
 
-<p>/<em> 方法二 </em>/
+<p>// 方法二
 Array.prototype.unique2(data) {</p>
 
 <pre><code>var n = {}; // 临时hash
 var r = []; // 临时数组
-for(var i=0; i&lt;data.length; i++) {
-    if(!n[data[i]]) { // 判断hash中是否存在这个项
+for (var i = 0; i &lt; data.length; i++) {
+    if (!n[data[i]]) { // 判断hash中是否存在这个项
         n[data[i]] = true; // 创建一个新项
         r.push(data[i]); // 将值存入数组中
     }
@@ -444,25 +486,27 @@ for(var i=0; i&lt;data.length; i++) {
 return r;
 </code></pre>
 
-<p>}
-/<em> 调用原型方法 </em>/
+<p>}</p>
+
+<p>// 调用原型方法
 var result2 = new Array();
 result2.unique2([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]</p>
 
-<p>/<em> 方法三 </em>/
+<p>// 方法三
 Array.prototype.unique3 = function(data) {</p>
 
 <pre><code>var n = [data[0]];
-for(var i=1; i&lt;data.length; i++) {
-    if(data.indexOf(data[i] == i) { // 通过判断数组值的下标与i的值是否相等，实现去掉重复
+for (var i = 1; i &lt; data.length; i++) {
+    if (data.indexOf(data[i] == i) { // 通过判断数组值的下标与i的值是否相等，实现去掉重复
         n.push(data[i]);
     }
 }
 return n;
 </code></pre>
 
-<p>}
-/<em> 调用原型方法 </em>/
+<p>}</p>
+
+<p>// 调用原型方法
 var result3 = new Array();
 result3.unique3([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]
 ```</p>
@@ -470,9 +514,9 @@ result3.unique3([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]
 <br />
 
 
-<h3>2.jQuery的经典写法有什么好处</h3>
+<p><strong> 2.jQuery的经典写法有什么好处 </strong></p>
 
-<p>```python
+<p>``` javascript
 (function($) {</p>
 
 <pre><code>$(function() {
@@ -482,15 +526,15 @@ result3.unique3([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]
 
 <p>})(jQuery);
 ```
-这是函数表达式的一种写法，不需要函数名并且立即调用此函数</p>
+这是函数表达式的一种写法，不需要函数名立即调用并传递参数</p>
 
 <br />
 
 
-<h3>3.如何解决多人开发函数命名重命的问题</h3>
+<p><strong> 3.如何解决多人开发函数命名重命的问题 </strong></p>
 
 <blockquote><ul>
-<li>开发前规范命名规则，根据不同的开发人员使用特殊的前缀，如：阿林<code>funciton ALifunction() {}</code></li>
+<li>开发前规范命名规则，根据不同的开发人员使用特殊的前缀，如：阿林<code>funciton aLiFunction() {}</code></li>
 <li>将每个开发人员的函数封装到类中，调用的时候就调用类的函数，即使函数重名只要类名不重复</li>
 </ul>
 </blockquote>
@@ -498,16 +542,9 @@ result3.unique3([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]
 <br />
 
 
-<h3>4.CSS、JS混合题，让元素绝对居中</h3>
+<p><strong> 4.CSS、JS混合题，让元素绝对居中 </strong></p>
 
-<p>```python</p>
-
-<p>/<em> HTML </em>/</p>
-
-<div id="box"></div>
-
-
-<p>/<em> CSS </em>/</p>
+<p>``` css</p>
 
 <h1>box {</h1>
 
@@ -515,30 +552,43 @@ result3.unique3([1,5,5,26,5,8,8,5,90,16]); // 返回[1, 5, 26, 8, 90, 16]
   width: 200px;
   height: 200px;
   background-color: #07d;
-}</p>
-
-<p>/<em> JS </em>/
-window.onload = function() {
-  var oBox = document.getElementById(&ldquo;box&rdquo;); // 获得元素
-  var oWidth = document.body.scrollWidth || document.documentElement.scrollWidth; // 获得元素的宽
-  var oHeight = document.body.scrollHeight || document.documentElement.scrollHeight; // 获得元素的高
-  oBox.style.left = (oWidth &ndash; oBox.offsetWidth) / 2 + &ldquo;px&rdquo;;
-  oBox.style.top = (oHeight &ndash; oBox.offsetHeight) / 2 + &ldquo;px&rdquo;;
 }
 ```</p>
 
-<p>在线预览：<a href="http://codepen.io/anon/pen/tDHJI/">点击这里</a></p>
+<p>``` javascript
+window.onload = function() {
+  changePosition()
+  window.onresize = function() {</p>
+
+<pre><code>changePosition()
+</code></pre>
+
+<p>  };
+  function changePosition() {</p>
+
+<pre><code>var oBox = document.getElementById("box");
+var oWidth = document.body.scrollWidth || document.documentElement.scrollWidth;
+var oHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
+oBox.style.left = (oWidth - oBox.offsetWidth) / 2 + "px";
+oBox.style.top = (oHeight - oBox.offsetHeight) / 2 + "px";
+</code></pre>
+
+<p>  }
+};
+```</p>
+
+<p>在线预览：<a href="http://jsbin.com/potoxucu/2/edit">点击这里</a></p>
 
 <br />
 
 
-<h3>5.使用Ajax上传一个文件</h3>
+<p><strong> 5.使用Ajax上传一个文件 </strong></p>
 
-<p>```python
-/<em> JS方式 </em>/
+<p>``` javascript
+// JS方式
 function Ajax() {
   var XHR = null;
-  if(window.ActiveXObject) { /<em> IE5 6是以ActiveObject的方式引入XMLHttpRequest对象的 </em>/</p>
+  if(window.ActiveXObject) { // IE5 6是以ActiveObject的方式引入XMLHttpRequest对象的</p>
 
 <pre><code>XHR = new ActiveXObject("Microsoft.XMLHTTP");
 </code></pre>
@@ -546,7 +596,7 @@ function Ajax() {
 <p>  }
   else if(window.XMLHttpRequest) { // 除IE5 6以外的浏览器</p>
 
-<pre><code>XHR = new XMLHttpRequest(); /* XMLHttpRequest是window的子对象，实例化一个XMLHttpRequest对象 */
+<pre><code>XHR = new XMLHttpRequest(); // XMLHttpRequest是window的子对象，实例化一个XMLHttpRequest对象
 </code></pre>
 
 <p>  }
@@ -562,16 +612,16 @@ function Ajax() {
   XML.send();
 }</p>
 
-<p>/<em> jQuery方法 </em>/</p>
+<p>// jQuery方法</p>
 
 <p>```</p>
 
 <br />
 
 
-<h3>6.JS中如何对一个对象进行深度clone</h3>
+<p><strong> 6.JS中如何对一个对象进行深度clone </strong></p>
 
-<p>```python
+<p>``` javascript
 // 浅clone
 var obj = {</p>
 
@@ -627,12 +677,12 @@ alert(obj.a.b); // 10
 
 <h2>其他</h2>
 
-<h3>1.前端应该使用MVC实现吗？说说你的看法和实现的思想</h3>
+<p><strong> 1.前端应该使用MVC实现吗？说说你的看法和实现的思想 </strong></p>
 
 <br />
 
 
-<h3>2.你如何让结构样式分离，你的哪些优化方法，如何解决兼容性问题？</h3>
+<p><strong> 2.你如何让结构样式分离，你的哪些优化方法，如何解决兼容性问题？ </strong></p>
 
 <p>结构样式分离：</p>
 
@@ -654,17 +704,21 @@ alert(obj.a.b); // 10
 3.  减少重绘页面</p>
 
 <p>解决兼容性：
-```python
-// 过滤
-// 条件注释法</p>
+``` css
+/<em>
+ * 过滤
+ * 条件注释法
+ </em>/</p>
 
 <!--[if lt IE 9]>
     <link rel="stylesheet" href="test.css"> 
 <![endif]-->
 
 
-<p>// Hack方法
-// 子选择器 IE6以更低版本不支持
+<p>/<em>
+ * Hack方法
+ * 子选择器 IE6以更低版本不支持
+ </em>/
 html>body {</p>
 
 <pre><code>font-size: 12px;
@@ -672,7 +726,7 @@ html>body {</p>
 
 <p>}</p>
 
-<p>// 属性选择器 IE6以更低版本不支持
+<p>/<em> 属性选择器 IE6以更低版本不支持 </em>/
 div[id=&ldquo;box&rdquo;] {</p>
 
 <pre><code>background-color: #fff;
@@ -680,7 +734,7 @@ div[id=&ldquo;box&rdquo;] {</p>
 
 <p>}</p>
 
-<p>// 星号html IE6及更低版本支持
+<p>/<em> 星号html IE6及更低版本支持 </em>/
 * html p { // IE6</p>
 
 <pre><code>color: blue;
@@ -694,7 +748,7 @@ div[id=&ldquo;box&rdquo;] {</p>
 
 <p>}</p>
 
-<p>// !important
+<p>/<em> !important </em>/
 .test {</p>
 
 <pre><code>background-color: yellow !important; // IE6及更低版本不支持!important，因此第二条生效
@@ -703,7 +757,7 @@ background-color: red;
 
 <p>}</p>
 
-<p>// 下划线
+<p>/<em> 下划线 </em>/
 .test {</p>
 
 <pre><code>background-color: yellow;
@@ -712,7 +766,7 @@ _background-color: red; // IE6及更低版本忽略下划线，因此覆盖第�
 
 <p>}</p>
 
-<p>// 属性星号
+<p>/<em> 属性星号 </em>/
 .test {</p>
 
 <pre><code>*color: red; // IE6、7都会生效
@@ -724,7 +778,7 @@ _background-color: red; // IE6及更低版本忽略下划线，因此覆盖第�
 <br />
 
 
-<h3>3.你对HTML5和CSS3的了解</h3>
+<p><strong> 3.你对HTML5和CSS3的了解 </strong></p>
 
 <p>HTML5新增：</p>
 
@@ -754,7 +808,7 @@ _background-color: red; // IE6及更低版本忽略下划线，因此覆盖第�
 <br />
 
 
-<h3>4.列出你知道的CSS框架和JS框架，并说明其有缺点</h3>
+<p><strong> 4.列出你知道的CSS框架和JS框架，并说明其有缺点 </strong></p>
 
 <p>CSS框架</p>
 
@@ -801,8 +855,6 @@ _background-color: red; // IE6及更低版本忽略下划线，因此覆盖第�
 
 <br />
 
-
-<p>尾巴：面试题中的答案存在错误的地方，我会在往后的日子里加以完善。</p>
 ]]></content>
   </entry>
   
